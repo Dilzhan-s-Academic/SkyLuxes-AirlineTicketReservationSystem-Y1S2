@@ -1,84 +1,59 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Dilshan Yapa it23366572 */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+* {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
-.airline-name h1 {
-	font-size: 3rem;
-	text-transform: uppercase;
-	color: white;
-}
-.airline-name h1 span {
-	color: crimson;
-}
-#head {
-	position: fixed;
-	z-index: 1000;
-	left: 0;
-	top: 0;
-	width: 100vw;
-	height: auto;
-}
-#head .head-container {
-	min-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.24);
-	transition: 0.3s ease background-color;
-}
-#head .nav-bar {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	height: 100%;
-	max-width: 1300px;
-	padding: 0 10px;
-}
-#head .nav-list ul {
-	list-style: none;
-	position: absolute;
-	background-color: rgb(31, 30, 30);
-	width: 100vw;
-	height: 100vh;
-	left: 100%;
-	top: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
-	overflow-x: hidden;
-	transition: 0.5s ease left;
-}
-#head .nav-list ul.active {
-	left: 0%;
-}
-#head .nav-list ul a {
-	font-size: 2.5rem;
+
+li , a , button {
+	font-family: "Montserrat",sans-serif ;
 	font-weight: 500;
-	letter-spacing: 0.2rem;
+	font-size: 16px;
+	color:#edf0f1;
 	text-decoration: none;
-	color: white;
-	text-transform: uppercase;
-	padding: 20px;
-	display: block;
 }
-#head .nav-list ul a::after {
-	content: attr(data-after);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(0);
-	color: rgba(240, 248, 255, 0.021);
-	font-size: 13rem;
-	letter-spacing: 50px;
-	z-index: -1;
-	transition: 0.3s ease letter-spacing;
+
+header{
+	display: flex;
+	justify-content: flex-end;
+	background-color: #24252A;
+	align-items: center;
+	padding: 1px 15px 2px 2px;
 }
-#head .nav-list ul li:hover a::after {
-	transform: translate(-50%, -50%) scale(1);
-	letter-spacing: initial;
+.logo {
+	height: 100px;
+	margin-right: auto;
+	cursor: pointer;
 }
-#head .nav-list ul li:hover a {
-	color: crimson;
+
+.navigation_links{
+	list-style: none;
 }
+.navigation_links > li {
+	display:inline-block;
+	padding: 0px 20px;
+}
+
+.navigation_links > li > a {
+	transition: all 0.3s ease 0s;
+}
+
+.navigation_links > li > a:hover {
+	color: #0088A9;
+}
+
+button{
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover{
+	background-color: rgba(0,136,169,0.5);
+}f

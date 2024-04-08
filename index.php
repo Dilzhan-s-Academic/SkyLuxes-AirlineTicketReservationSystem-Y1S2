@@ -1,8 +1,34 @@
-<html>
-    <head>
+<!--Dilshan Yapa it23366572-->
 
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/header.css">
     </head>
     <body>
-        <?php include"./config/header.php" ?>
+        <header>
+            <img src="images/logo.png" alt="SkyLuxe Logo" class="logo">
+            <nav>
+                <ul class="navigation_links">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Plan & Book</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">SkyLuxe</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#"><button>Sign in/up</button></a>
+        </header>
     </body>
 </html>
