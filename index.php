@@ -56,46 +56,54 @@
         </div>
 
         <div class= "SearchFlightsForm">
-            <span>Book a Trip</span>
+            <span>Reserve Your Sheet</span>
             <div class="form-div">
                 <form> 
-                    <select name="DepartureAirport" id="DepartureAirport">
-                        <option disabled selected value> FROM </option>
-                        <option value="abc">abc</option>
-                        <option value="ddd">ddd</option>
-                        <option value="333">333</option>
-                    </select>
-                    <input type="date" id="DayToGo">
-                    <input type="date" id="DayToCome">
-                    <br/>
-                    <select name="DestinationAirport" id="DestinationAirport">
-                        <option disabled selected value> TO </option>
-                        <option value="abc">abc</option>
-                        <option value="ddd">ddd</option>
-                        <option value="333">333</option>
-                    </select>
-                    <select name="SheetCount" id="SheetCount">
-                        <option disabled selected value> Sheet Count </option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                    <select name="SheetClass" id="SheetClass">
-                        <option disabled selected value> Class </option>
-                        <option value="abc">Economy</option>
-                        <option value="ddd">Business</option>
-                    </select>
-                    <br/>
-                    <input type="radio" id="TripType1" value="OneWay" name="TripType"> Oneway
-                    <input type="radio" id="TripType2" value="Returm" name="TripType"> Return
-                    <input type="Submit" id="Search" value="Search">
+                    <div class="form-elements">
+                        <select name="DepartureAirport" id="DepartureAirport">
+                            <option disabled selected value> FROM </option>
+                            <option value="abc">abc</option>
+                            <option value="ddd">ddd</option>
+                            <option value="333">333</option>
+                        </select>
+                        <input type="date" id="DayToGo">
+                        <input type="date" id="DayToCome">
+                    </div>
+                    <div class="form-elements">
+                        <select name="DestinationAirport" id="DestinationAirport">
+                            <option disabled selected value> TO </option>
+                            <option value="abc">abc</option>
+                            <option value="ddd">ddd</option>
+                            <option value="333">333</option>
+                        </select>
+                        <select name="SheetCount" id="SheetCount">
+                            <option disabled selected value> Sheet Count </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <select name="SheetClass" id="SheetClass">
+                            <option disabled selected value> Class </option>
+                            <option value="abc">Economy</option>
+                            <option value="ddd">Business</option>
+                        </select>
+                    </div>
+                    <div class="form-submittion">
+                        <div class="TripType">
+                            <input type="radio" id="TripType1" value="OneWay" name="TripType">
+                            <lable id="TripType1">Oneway</lable>
+                            <input type="radio" id="TripType2" value="Returm" name="TripType" checked="checked">
+                            <lable id="TripType2">Return</lable>
+                        </div>
+                        <input type="Submit" id="Search" value="Search">
+                    </div>
                 </form>
             </div>
         </div>

@@ -1,3 +1,5 @@
+// Dilshan Yapa it23366572
+
 let slideIndex = 0;
 showSlides();
 

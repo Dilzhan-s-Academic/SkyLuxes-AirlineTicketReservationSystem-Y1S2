@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap')
+/* Dilshan Yapa it23366572 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
 
 * {box-sizing: border-box;}
 .mySlides {display: none;}
@@ -68,14 +70,62 @@ mySlides fade > img {
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
-.form-div{
+.form-elements{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 20px 0px 20px 0px;
 }
 .SearchFlightsForm > span {
   display: flex;
   justify-content: center;
   font-weight: 700;
   font-size: large;
+}
+
+.form-elements > input,select {
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  height: 42px;
+  width:calc(100% / 3 - 15px);
+}
+
+.form-elements > input:is(:focus, :valid),select:is(:focus, :valid) {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.form-elements > input:hover,select:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.form-submittion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-submittion #TripType1, #TripType2{
+  position: relative;
+  margin-right: auto;
+  margin: 0px 10px 0px 10px;
+}
+
+.form-submittion > #Search {
+  border: 1px solid #aaa; 
+  border-radius: 10px;
+  background-color:rgba(4, 4, 172, 0.8);
+  color: #f2f2f2;
+  height: 40px;
+  width: 80px;
+}
+
+.form-submittion > #Search:hover {
+  background-color: rgba(4, 4, 172, 0.9);
+}
+.form-submittion > #Search:active {
+  background-color: rgba(4, 4, 172, 1);
 }
