@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap')
+
 * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -52,4 +53,29 @@ mySlides fade > img {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+.SearchFlightsForm {
+  position: relative;
+  bottom: 90px;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px 30px 10px 30px;
+  margin: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.form-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.SearchFlightsForm > span {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: large;
 }
