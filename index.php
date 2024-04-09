@@ -5,6 +5,8 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="styles/header.css">
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        
     </head>
     <body>
         <header>
@@ -30,5 +32,28 @@
             </nav>
             <a href="#"><button>Sign in/up</button></a>
         </header>
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="images/slideshow/banner1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slideshow/banner2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/slideshow/banner3.jpg" style="width:100%">
+        </div>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+
+        <script src="js/slideshow.js"></script>
     </body>
 </html>
