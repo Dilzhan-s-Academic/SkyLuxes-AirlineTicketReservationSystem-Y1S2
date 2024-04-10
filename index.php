@@ -61,7 +61,7 @@
                 <form> 
                     <div class="form-elements">
                         <select name="DepartureAirport" id="DepartureAirport">
-                            <option disabled selected value> FROM </option>
+                            <option disabled selected value> From </option>
                             <option value="abc">abc</option>
                             <option value="ddd">ddd</option>
                             <option value="333">333</option>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="form-elements">
                         <select name="DestinationAirport" id="DestinationAirport">
-                            <option disabled selected value> TO </option>
+                            <option disabled selected value> To </option>
                             <option value="abc">abc</option>
                             <option value="ddd">ddd</option>
                             <option value="333">333</option>
