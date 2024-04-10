@@ -107,6 +107,35 @@
                 </form>
             </div>
         </div>
+
+        <div class="Packages">
+            
+            <div class="pack">
+                <div class="thumbnail">
+                    <img src="#" alt="Package 1">
+                </div>
+                <div class="desc">
+                    <span id="packdesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                </div>
+                <div class="btns">
+                    <button id="ViewDetails">View Details</button>
+                    <button id="Buy">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="pack">
+                <div class="thumbnail">
+                    <img src="#" alt="Package 1">
+                </div>
+                <div class="desc">
+                    <span id="packdesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                </div>
+                <div class="btns">
+                    <button id="ViewDetails">View Details</button>
+                    <button id="Buy">Buy Now</button>
+                </div>
+            </div>
+        </div>
         <script src="js/slideshow.js"></script>
     </body>
 </html>

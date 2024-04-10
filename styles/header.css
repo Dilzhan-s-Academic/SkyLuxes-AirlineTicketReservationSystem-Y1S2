@@ -1,14 +1,8 @@
 /* Dilshan Yapa it23366572 */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
-* {
-    box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
 
-li , a , button {
+header > nav > ul > li , header > nav > ul > li > a , header > a >  button {
 	font-family: "Montserrat",sans-serif ;
 	font-weight: 500;
 	font-size: 16px;
@@ -45,7 +39,7 @@ header{
 	color: #0088A9;
 }
 
-button{
+header > a > button{
 	padding: 9px 25px;
 	background-color: rgba(0,136,169,1);
 	border: none;
@@ -54,6 +48,15 @@ button{
 	transition: all 0.3s ease 0s;
 }
 
-button:hover{
+header > a > button:hover{
 	background-color: rgba(0,136,169,0.5);
+}
+
+.Packages > .pack {
+	border: 1px solid rgb(71, 60, 160);
+	border-radius: 14px;
+	background-color: rgb(211, 224, 224);
+	max-width: 20%;
+	max-height: 250px;
+	height: 100%;
 }
