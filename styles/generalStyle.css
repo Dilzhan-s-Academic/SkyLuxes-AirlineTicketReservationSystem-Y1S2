@@ -1,5 +1,5 @@
 /* Dilshan Yapa it23366572 */
-
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 *{
     box-sizing: border-box;
 	margin: 0;
@@ -9,3 +9,16 @@
     font-weight: 400;
     font-style: normal;
 }
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:blueviolet;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.body-content{
+    margin: 0px 100px 0px 100px;
+  }

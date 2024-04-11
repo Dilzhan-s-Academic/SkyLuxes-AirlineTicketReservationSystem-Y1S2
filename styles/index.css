@@ -129,3 +129,15 @@ mySlides fade > img {
 .form-submittion > #Search:active {
   background-color: rgba(4, 4, 172, 1);
 }
+
+.Packages > .pack {
+	border: none;
+	border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+	background-color: rgb(255, 255, 255);
+	max-width: 250px;
+	height: 350px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
