@@ -5,15 +5,17 @@
 <html lang="en">
 
     <head>
-        <link rel="stylesheet" type="text/css" href="../styles/header.css">
+        <link rel="stylesheet" type="text/css" href="styles/header.css">
     </head>
     <body>
         <header>
-            <img src="../images/logo.png" alt="SkyLuxe Logo" class="headerlogo">
+            <a href="index.php" class="logoLink">
+                <img src="images/logo.png" alt="SkyLuxe Logo" class="headerlogo" id="headerlogo">
+            </a>
             <nav>
                 <ul class="navigation_links">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li>
                         <a href="#">Plan & Book</a>

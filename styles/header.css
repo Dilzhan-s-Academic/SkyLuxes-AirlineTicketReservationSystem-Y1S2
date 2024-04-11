@@ -17,6 +17,9 @@ header{
 	align-items: center;
 	padding: 1px 15px 2px 2px;
 }
+header > .logoLink {
+	margin-right: auto;
+}
 .headerlogo {
 	height: 100px;
 	margin-right: auto;
