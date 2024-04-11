@@ -6,12 +6,13 @@
     <head>
         <link rel="stylesheet" type="text/css" href="styles/generalStyle.css">
         <link rel="stylesheet" type="text/css" href="styles/header.css">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css">
         <link rel="stylesheet" type="text/css" href="styles/index.css">
         
     </head>
     <body>
         <header>
-            <img src="images/logo.png" alt="SkyLuxe Logo" class="logo">
+            <img src="images/logo.png" alt="SkyLuxe Logo" class="headerlogo">
             <nav>
                 <ul class="navigation_links">
                     <li>
@@ -257,6 +258,27 @@
                 
             </div>
         </div>
+
+        <footer>
+            <div class="footerContainer">
+                <div class="FooterNav">
+                    <a href="index.php">Home</a> <label> | </label>
+                    <a href="#">Services</a> <label> | </label>
+                    <a href="#">About Us</a> <label> | </label>
+                    <a href="#">Contact Us</a> <label> | </label>
+                    <a href="#">Privacy & Policies</a> <label> | </label>
+                    <a href="#">Terms & Conditions</a> <label> | </label>
+                    <a href="#">Legal Notices</a> 
+                </div>
+                <div class="FooterLogo">
+                    <img src="images/logo.png" alt="SkyLuxe Logo" class="FooterLogo">
+                </div>
+                <div class="rights">
+                    <span>2024 © MLB_09.01_01 </span>
+                </div>
+            </div>
+        </footer>
+
         <script src="js/slideshow.js"></script>
     </body>
 </html>

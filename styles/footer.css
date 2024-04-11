@@ -1,0 +1,31 @@
+footer{
+    background-color: #24252A;
+    display: flex;
+    justify-content: center;
+}
+.footerContainer > .rights > span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #aaaaaad1;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.footerContainer > .FooterLogo {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FooterLogo {
+    height: 100px;
+	cursor: pointer;
+}
+.footerContainer > .FooterNav {
+    margin: 10px 0px 10px 0px;
+}
+.FooterNav > a {
+    color: #f2f2f2;
+    text-decoration: none;
+}

@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <img src="../images/logo.png" alt="SkyLuxe Logo" class="logo">
+            <img src="../images/logo.png" alt="SkyLuxe Logo" class="headerlogo">
             <nav>
                 <ul class="navigation_links">
                     <li>
