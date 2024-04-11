@@ -16,9 +16,9 @@ h1,h2,h3,h4,h5,h6{
     font-style: normal;
     color:blueviolet;
     text-align: center;
-    margin-top: -5px;
+    margin: 5px 0px 20px 0px;
 }
 
 .body-content{
-    margin: 0px 100px 0px 100px;
+    margin: 0px 5% 0px 5%;
   }

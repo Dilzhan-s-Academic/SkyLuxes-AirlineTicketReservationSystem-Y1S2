@@ -109,32 +109,152 @@
         </div>
         <div class="body-content">
             <div class="Packages">
-                <h1>Most Popular Packages</h1>
-                <div class="pack">
+                <h1>Our Travel Packages</h1>
+                <div class="cardRow">
+                <div class="card">
                     <div class="thumbnail">
-                        <img src="#" alt="Package 1">
+                        <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
                     </div>
                     <div class="desc">
-                        <span id="packdesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
                     </div>
                     <div class="btns">
-                        <button id="ViewDetails">View Details</button>
+                        <button id="Buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="images/Packages/Cape Town, South Africa.jpg" alt="Package 1">
+                    </div>
+                    <div class="desc">
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                    </div>
+                    <div class="btns">
+                        <button id="Buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="images/Packages/Istanbul, Turkey.jpg" alt="Package 1">
+                    </div>
+                    <div class="desc">
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                    </div>
+                    <div class="btns">
+                        <button id="Buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="images/Packages/Machu Picchu.jpg" alt="Package 1">
+                    </div>
+                    <div class="desc">
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                    </div>
+                    <div class="btns">
+                        <button id="Buy">Buy Now</button>
+                    </div>
+                </div>
+                </div>
+                <div class="cardRow">
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="images/Packages/Maui, Hawaii.jpg" alt="Package 1">
+                    </div>
+                    <div class="desc">
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                    </div>
+                    <div class="btns">
+                        <button id="Buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="images/Packages/Rome, Italy.jpg" alt="Package 1">
+                    </div>
+                    <div class="desc">
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                    </div>
+                    <div class="btns">
+                        <button id="Buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="images/Packages/Santorini, Greece.jpg" alt="Package 1">
+                    </div>
+                    <div class="desc">
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                    </div>
+                    <div class="btns">
                         <button id="Buy">Buy Now</button>
                     </div>
                 </div>
 
-                <div class="pack">
+                <div class="card">
                     <div class="thumbnail">
-                        <img src="#" alt="Package 1">
+                        <img src="images/Packages/Paris, France.jpg" alt="Package 1">
                     </div>
                     <div class="desc">
-                        <span id="packdesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
                     </div>
                     <div class="btns">
-                        <button id="ViewDetails">View Details</button>
+                        <button id="Buy">Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="Services">
+                <h1>Our Services</h1>
+                <div class="cardRow">
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
+                    </div>
+                    <div class="desc">
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                    </div>
+                    <div class="btns">
                         <button id="Buy">Buy Now</button>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
+                    </div>
+                    <div class="desc">
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                    </div>
+                    <div class="btns">
+                        <button id="Buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
+                    </div>
+                    <div class="desc">
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                    </div>
+                    <div class="btns">
+                        <button id="Buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="thumbnail">
+                        <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
+                    </div>
+                    <div class="desc">
+                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                    </div>
+                    <div class="btns">
+                        <button id="Buy">Buy Now</button>
+                    </div>
+                </div>
+                </div>
+                
             </div>
         </div>
         <script src="js/slideshow.js"></script>

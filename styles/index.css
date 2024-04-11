@@ -92,6 +92,7 @@ mySlides fade > img {
   border: 1px solid #aaa;
   height: 42px;
   width:calc(100% / 3 - 15px);
+  cursor: pointer;
 }
 
 .form-elements > input:is(:focus, :valid),select:is(:focus, :valid) {
@@ -112,6 +113,7 @@ mySlides fade > img {
   position: relative;
   margin-right: auto;
   margin: 0px 10px 0px 10px;
+  cursor: pointer;
 }
 
 .form-submittion > #Search {
@@ -121,6 +123,7 @@ mySlides fade > img {
   color: #f2f2f2;
   height: 40px;
   width: 80px;
+  cursor: pointer;
 }
 
 .form-submittion > #Search:hover {
@@ -130,14 +133,52 @@ mySlides fade > img {
   background-color: rgba(4, 4, 172, 1);
 }
 
-.Packages > .pack {
+.card {
 	border: none;
 	border-radius: 5px;
   padding: 10px;
   margin: 10px;
 	background-color: rgb(255, 255, 255);
 	max-width: 250px;
-	height: 350px;
+	height: 360px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
+.card > .thumbnail > img {
+  max-width: 230px;
+  margin: 5px 0px 5px 0px;
+  border-radius: 5px;
+}
+
+#carddesc {
+  text-align: justify;
+}
+.card > .btns > button {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  width: 100%;
+  color:#f2f2f2;
+  font-weight: 500;
+  background-color:rgba(4, 4, 172, 0.8);
+  margin: 2px 0px 2px 0px;
+  padding: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+
+.card > .btns > button:hover {
+  background-color:rgba(4, 4, 172, 0.9);
+}
+
+.card > .btns > button:active {
+  background-color:rgba(4, 4, 172, 1);
+}
+
+.cardRow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Services{
+  margin:100px 0px 100px 0px;
+}
