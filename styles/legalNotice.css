@@ -11,6 +11,12 @@
     background:#fff;
     padding: 10px;
     border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.dropDown > li:hover {
+    border: 0.5px solid #474fc6a1;
+    box-shadow: 0 5px 10px rgba(197, 101, 101, 0.488);
 }
 
 .notices label {

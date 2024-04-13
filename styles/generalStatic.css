@@ -43,15 +43,20 @@
     text-decoration: none;
 }
 .menuLinks > a > li {
-    border: 1px solid black;
+    background-color: #fff;
     border-radius: 5px;
     padding: 10px;
-    margin: 5px;
+    margin: 7px 15px 7px 15px;
     text-align: center;
     cursor: pointer;
     font-weight: 600;
     color: black;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.menuLinks > a > li:hover {
+    border: 0.5px solid #474fc6a1;
+    box-shadow: 0 5px 10px rgba(197, 101, 101, 0.488);
 }
 
 .content {
@@ -64,6 +69,6 @@
     background-color: #d8d9d85f;
 }
 .content > p {
-    margin: 10px 50px 15px 50px;
+    margin: 15px 50px 15px 50px;
     text-align: justify;
 }
