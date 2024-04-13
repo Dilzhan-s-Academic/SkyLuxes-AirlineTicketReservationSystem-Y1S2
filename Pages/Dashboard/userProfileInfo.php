@@ -19,15 +19,21 @@
             h1,h3 {
                 text-align: left;
             }
-            .udForm {
+            .udForm > form > .name , .udForm > form > .addr , .udForm > form > .contact{
                 display: flex;
+                justify-content: space-evenly;
+                align-items: center;
                 margin: 30px 5px 5px 5px;
             }
+
             .udForm > form  input {
                 padding: 10px;
-                width: 100px;
+                width: 33%;
                 border-radius: 5px;
                 box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.5);
+            }
+            .udForm > form > .addr > input {
+                width:85%
             }
         </style>
     </head>
@@ -37,26 +43,23 @@
                 <h3>User Details</h3>
                 <div class="udForm">
                     <form action="#">
-                            <label>First Name : </label>
-                                <input type="text" id="fname" name="fname" placeholder="First Name">
-                            <label>Last Name :</label>
-                                <input type="text" id="lname" name="lname" placeholder="Last Name">
-                            <label>Address :</label>
-                                <input type="text" id="lname" name="lname" placeholder="Address">
-                            <label>Mobile No :</label>
-                                <input type="text" id="mobile" name="mobile" placeholder="Mobile Number">
-                            <label>E-mail :</label>
-                                <input type="text" id="mail" name="mail" placeholder="E-mail">
-                    </form>
-                </div>
-                <div class="udForm">
-                    <form action="#">
-                            <label>User Name : </label>
-                                <input type="text" id="fname" name="fname" placeholder="First Name">
-                            <label>New Password :</label>
-                                <input type="text" id="lname" name="lname" placeholder="Last Name">
-                            <label>Current Password :</label>
-                                <input type="text" id="lname" name="lname" placeholder="Address">
+                            <div class="name">
+                                <label>First Name : </label>
+                                    <input type="text" id="fname" name="fname" placeholder="First Name">
+                                <label>Last Name :</label><br/>
+                                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                            </div>
+                            <div class="addr">
+                                <label>Address :</label>
+                                    <input type="text" id="lname" name="lname" placeholder="Address">
+                            </div>
+                            <div class="contact">
+                                <label>Mobile No :</label>
+                                    <input type="text" id="mobile" name="mobile" placeholder="Mobile Number">
+                                <label>E-mail :</label>
+                                    <input type="text" id="mail" name="mail" placeholder="E-mail">
+                            </div>
+                            
                     </form>
                 </div>
             </div>
