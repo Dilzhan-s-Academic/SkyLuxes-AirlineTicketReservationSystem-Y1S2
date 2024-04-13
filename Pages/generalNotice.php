@@ -27,6 +27,9 @@
                     <a href="#">
                         <li>Privacy & Policies</li>
                     </a>
+                    <a href="#">
+                        <li>Terms & Conditions</li>
+                    </a>
                     <a href="legalNotice.php">
                         <li>Legal Notices</li>
                     </a>
