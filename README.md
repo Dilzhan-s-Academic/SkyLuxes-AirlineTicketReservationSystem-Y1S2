@@ -10,7 +10,7 @@ At the moment, users navigate through legal menus and dashboards on separate pag
 
 ### Docker Container Implementation (Dilshan Yapa)
 I'm considering leveraging Docker containers to optimize deployment and scalability. By encapsulating the application and its dependencies, I aim to simplify deployment processes and ensure consistent performance across different environments. This approach will not only streamline deployment but also make it easier to manage and scale the project as it grows.
-<hl>
+<hr>
 Keep an eye out for these enhancements as we strive to make our system even more efficient and user-friendly!
 
 
