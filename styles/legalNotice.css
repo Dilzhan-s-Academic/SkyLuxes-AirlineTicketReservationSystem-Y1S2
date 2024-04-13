@@ -1,0 +1,50 @@
+.legalnotices {
+    margin: 50px;
+}
+
+.dropDown > li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background:#fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.notices label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #c20000;
+}
+.dropDown input{
+    display: none;
+}
+.dropDownContent {
+    padding: 0px 10px;
+    line-height: 20px;
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.5s;
+}
+
+.notices label span {
+    transition: all 0.4s;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+}
+
+.dropDown input:checked + .notices .dropDownContent{
+    max-height: 400px;
+}
+.dropDown input:checked + .notices label span {
+    transform: rotate(90deg);
+}
+.dropDownContent > p {
+    text-align: justify;
+    text-indent: 3em;
+}

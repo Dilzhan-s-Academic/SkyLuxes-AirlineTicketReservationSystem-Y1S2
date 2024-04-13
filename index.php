@@ -35,7 +35,7 @@
         </div>
 
         <div class= "SearchFlightsForm">
-            <span>Reserve Your Sheet</span>
+            <span>Reserve Your Seat</span>
             <div class="form-div">
                 <form> 
                     <div class="form-elements">

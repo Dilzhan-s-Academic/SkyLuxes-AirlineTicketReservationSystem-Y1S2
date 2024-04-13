@@ -5,17 +5,17 @@
 <html lang="en">
 
     <head>
-        <link rel="stylesheet" type="text/css" href="styles/header.css">
+        <link rel="stylesheet" type="text/css" href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/styles/header.css">
     </head>
     <body>
         <header>
             <a href="index.php" class="logoLink">
-                <img src="images/logo.png" alt="SkyLuxe Logo" class="headerlogo" id="headerlogo">
+                <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/logo.png" alt="SkyLuxe Logo" class="headerlogo" id="headerlogo">
             </a>
             <nav>
                 <ul class="navigation_links">
                     <li>
-                        <a href="index.php">Home</a>
+                        <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/index.php">Home</a>
                     </li>
                     <li>
                         <a href="#">Plan & Book</a>
