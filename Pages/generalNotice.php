@@ -1,4 +1,4 @@
-<!--Dilshan Yapa it23366572-->
+<!--Dilshan Yapa S Y C T it23366572-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,13 +21,13 @@
                 </div>
                 
                 <ul class="menuLinks">
-                    <a href="#">
+                    <a href="generalNotice.php">
                         <li>General Notices</li>
                     </a>
                     <a href="#">
                         <li>Privacy & Policies</li>
                     </a>
-                    <a href="#">
+                    <a href="legalNotice.php">
                         <li>Legal Notices</li>
                     </a>
                 </ul>
