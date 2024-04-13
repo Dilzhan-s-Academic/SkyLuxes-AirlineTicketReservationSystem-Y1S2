@@ -1,7 +1,5 @@
 /* Dilshan Yapa S Y C T it23366572 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
-
 * {box-sizing: border-box;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -176,7 +174,7 @@ mySlides fade > img {
 .cardRow{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .Services{

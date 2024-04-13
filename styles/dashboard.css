@@ -1,0 +1,60 @@
+.userDashboardMenu {
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #eaecea;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
+    width: 300px;
+    padding: 30px;
+}
+.user {
+    display: inline;
+}
+.profilePic > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.userName > span {
+    font-weight: 900;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.userBio{
+    margin-top: 5px;
+    text-align: justify;
+    font-size: small;
+}
+
+.navList {
+    margin-top: 30px;
+}
+.linkList{
+    list-style: none;
+}
+.linkList > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.linkList > a > li {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 7px 15px 7px 15px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: black;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.linkList > a > li:hover {
+    border: 0.5px solid #474fc6a1;
+    box-shadow: 0 5px 10px rgba(197, 101, 101, 0.488);
+}
