@@ -49,6 +49,7 @@
                     break;
                 case 'myresrv':
                     path = 'Dashboard/userReservationInfo.php';
+                    break;
             }
             fetch(path)
                 .then(response => response.text())

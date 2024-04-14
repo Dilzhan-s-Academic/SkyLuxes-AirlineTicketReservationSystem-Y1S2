@@ -10,6 +10,7 @@
     background-color: #eaecea;
     box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
     width: 300px;
+    height: 100%;
     padding: 30px;
 }
 .user {
