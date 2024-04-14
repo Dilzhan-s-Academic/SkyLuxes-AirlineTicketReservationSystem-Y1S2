@@ -22,10 +22,15 @@
         </style>
     </head>
         <body>
-            <h1 class="headding"> Profile Information</h1>
+            <h1 class="headding">My Reservation</h1>
             <div class="userDetailContainer">
-                <h3>User Details</h3>
-                
+                <h3>Reservation</h3>
+                <div class="reservationList">
+                    <tabel>
+                        <tr>
+                            <th>
+                                
+                </div>
             </div>
         </body>
 </html>

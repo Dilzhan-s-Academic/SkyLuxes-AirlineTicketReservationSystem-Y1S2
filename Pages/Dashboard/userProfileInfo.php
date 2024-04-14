@@ -65,11 +65,11 @@
                     <form action="#">
                                 <div class="formElement">
                                     <label>First Name : </label>
-                                        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                                        <input type="text" id="fname" name="fname" placeholder="First Name" pattern="[A-Z][a-z]+" required>
                                 </div>
                                 <div class="formElement">
                                     <label>Last Name :</label>
-                                        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                                        <input type="text" id="lname" name="lname" placeholder="Last Name" pattern="[A-Z][a-z]+" required>
                                 </div>
                                 <div class="formElement">
                                     <label>Address :</label>
@@ -77,7 +77,7 @@
                                 </div>
                                 <div class="formElement">
                                     <label>Mobile No :</label>
-                                        <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                                        <input type="phone" id="mobile" name="mobile" placeholder="Mobile Number" pattern="[\+][0-9]{10,}" required>
                                 </div>
                                 <div class="formElement">
                                     <label>E-mail :</label>
@@ -96,15 +96,15 @@
                     <form action="#">
                                 <div class="formElement">
                                     <label>Username : </label>
-                                        <input type="text" id="username" name="username" placeholder="Username" required>
+                                        <input type="text" id="username" name="username" placeholder="Username" pattern="[A-Z a-z 0-9]{4,8}" required>
                                 </div>
                                 <div class="formElement">
                                     <label>New Password :</label>
-                                        <input type="password" id="newpwd" name="newpwd" placeholder="New Password" oninput="checkPwd()" required>
+                                        <input type="password" id="newpwd" name="newpwd" placeholder="New Password" oninput="checkPwd()" pattern="[a-z A-Z 0-9 \. @ % #]{8,}{8,}" required>
                                 </div>
                                 <div class="formElement">
                                     <label>Confirm Password :</label>
-                                        <input  type="password" id="cnfmpwd" name="cnfmpwd" placeholder="Confirm Password" oninput="checkPwd()"  required>
+                                        <input  type="password" id="cnfmpwd" name="cnfmpwd" placeholder="Confirm Password" oninput="checkPwd()" pattern="[a-z A-Z 0-9 \. @ % #]{8,}" required>
                                         <span id="pwdStat"></span>
                                 </div>                              
                                 <div class="submitButton">

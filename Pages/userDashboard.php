@@ -79,7 +79,7 @@
                             submitbtn.disabled = false;
                         }
             }
-            loadContent('myinfo');
+            loadContent('myresrv');
         </script>
     </body>
 </html>
