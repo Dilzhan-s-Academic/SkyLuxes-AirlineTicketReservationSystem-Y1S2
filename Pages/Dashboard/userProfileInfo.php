@@ -100,14 +100,15 @@
                                 </div>
                                 <div class="formElement">
                                     <label>New Password :</label>
-                                        <input type="password" id="newpwd" name="newpwd" placeholder="New Password" required>
+                                        <input type="password" id="newpwd" name="newpwd" placeholder="New Password" oninput="checkPwd()" required>
                                 </div>
                                 <div class="formElement">
                                     <label>Confirm Password :</label>
-                                        <input  type="password" id="cnfmpwd" name="cnfmpwd" placeholder="Confirm Password" required>
+                                        <input  type="password" id="cnfmpwd" name="cnfmpwd" placeholder="Confirm Password" oninput="checkPwd()"  required>
+                                        <span id="pwdStat"></span>
                                 </div>                              
                                 <div class="submitButton">
-                                    <input type="submit" value="Save" name="Save" disabled>
+                                    <input type="submit" id="submitBtn" value="Save" name="Save" disabled>
                                 </div>
                     </form>
                 </div>
