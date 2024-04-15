@@ -5,6 +5,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/dashboard.css">
+        <script src="../js/popupWindow.js"></script>
     </head>
     <body>
         <?php include "../config/header.php" ?>
@@ -29,6 +30,9 @@
                         <a href="#" id="info" onclick="loadContent('myinfo');">
                             <li> Profile Information </li>
                         </a>
+                        <a href="#" id="info" onclick="loadContent('loyalty');">
+                            <li> Loyalty Customer </li>
+                        </a>
                         <a href="#" id="logout">
                             <li style="background-color: #f00;color:#fff"> Log Out </li>
                         </a>
@@ -49,6 +53,9 @@
                         break;
                     case 'myresrv':
                         path = 'Dashboard/userReservationInfo.php';
+                        break;
+                    case 'loyalty':
+                        path = 'Dashboard/loyaltyCust.php';
                         break;
                 }
                 fetch(path)
