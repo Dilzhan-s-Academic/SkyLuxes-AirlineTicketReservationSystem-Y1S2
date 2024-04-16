@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <a href="index.php" class="logoLink">
+            <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/index.php" class="logoLink">
                 <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/logo.png" alt="SkyLuxe Logo" class="headerlogo" id="headerlogo">
             </a>
             <nav>
