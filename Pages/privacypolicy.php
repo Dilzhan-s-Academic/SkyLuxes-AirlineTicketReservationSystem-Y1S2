@@ -1,4 +1,4 @@
-<!--Dilshan Yapa S Y C T it23366572-->
+<!--G.M.M.Dissanayake It23360846-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,27 +36,28 @@
                 </ul>
             </div>
             <div class="content">
-                <h1>General Notices</h1>
+                <h1>Privacy Policy</h1>
                 <p>
-                    At Skyluxe Airlines, we value your privacy and are committed to protecting your personal information. When you visit our website or use our services, we may collect and store certain data about you in accordance with our policies.
+                Welcome to the Privacy Policy of Skyluxe Airlines Limited.
                 </p>
                 <p>
-                    We invite you to carefully review our Terms & Conditions, Privacy Policy, and Legal Notices available on our website. These documents outline our policies and practices regarding the collection, use, and protection of your personal data.
+                    We invite you to carefully review our Privacy Policy Notice.
                 </p>
                 <p>
-                    The Terms & Conditions provide the rules and regulations governing your use of our services, including ticket reservations, baggage policies, and more. Please read them carefully before making any reservations or purchases.
+                    Your privacy is important to us and we want to assure you that that the Personal Data we collect about you will be treated with care 
                 </p>
                 <p>
-                    Our Privacy Policy explains how we collect, use, and safeguard your personal information, such as your name, contact details, and travel preferences. It also describes your rights and choices regarding your personal data.
+                Your name, contact information, and travel preferences are examples of the personal information we gather, use, and protect. Our Privacy Policy explains how. It also outlines your options and rights with relation to your personal information.
                 </p>
                 <p>
-                    The Legal Notices section contains important legal information, including disclaimers, limitations of liability, and intellectual property rights notices.
+                This Privacy Policy is provided in a layered format so you can click through to the specific areas set out below.   
                 </p>
                 <p>
-                    By using our website or services, you agree to be bound by these policies. If you have any questions or concerns, please refer to the "About Us" section on our website for contact information.
+                 *   
                 </p>
                 <p>
-                    We appreciate your trust in Skyluxe Airlines and look forward to providing you with exceptional service.
+                We value your confidence in Skyluxe Airlines and are eager to deliver first-rate service to you.
+
                 </p>
             </div>
         </div>
