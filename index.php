@@ -236,7 +236,19 @@
                 
             </div>
         </div>
+        <div class="pacakgeView">
+            <div class="packageName">
+                <span id="pkgName"></span>
+            </div>
+            <div class="pkgDesc">
+                <span>Destination : </span> <span id="pkgDestination"></span> 
+                <span>Duration : </span> <span id="pkgDestination"></span> 
+                <span>Destination : </span> <span id="pkgDestination"></span> 
+                <span>Destination : </span> <span id="pkgDestination"></span> 
+                <span>Destination : </span> <span id="pkgDestination"></span> 
 
+            </div>
+        </div>
         <?php include "./config/footer.php" ?>
 
         <script src="js/slideshow.js">
