@@ -29,9 +29,10 @@
                     <li>
                         <a href="#">Contact Us</a>
                     </li>
-                </ul>
+                </ul> 
             </nav>
-            <a href="#"><button>Sign in/up</button></a>
+            <a href="#"><button>Sign in</button></a>
+            <a href="#"><button>Sign up</button></a>
         </header>
     </body>
 </html>
