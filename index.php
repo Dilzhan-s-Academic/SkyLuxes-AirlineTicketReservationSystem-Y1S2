@@ -99,7 +99,7 @@
                     <div class="desc">
                         <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
                     </div>
-                    <div class="btns"  onclick="openPopup('pacakgeError');">
+                    <div class="btns">
                         <button id="Buy">Buy Now</button>
                     </div>
                 </div>
