@@ -1,6 +1,5 @@
 <!--Dilshan Yapa S Y C T it23366572-->
 
-
 <?php require "config/dbConn.php" ?>
 <!DOCTYPE html>
 <html lang="en">
