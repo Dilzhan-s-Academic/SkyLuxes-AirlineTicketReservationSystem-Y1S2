@@ -3,7 +3,6 @@
 *{
     box-sizing: border-box;
 	margin: 0;
-	padding: 0;
 	border: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -18,7 +17,25 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     margin: 5px 0px 50px 0px;
 }
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
 
 .body-content{
     margin: 0px 5% 5% 5%;
-  }
+}

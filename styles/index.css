@@ -10,7 +10,7 @@ img {vertical-align: middle;}
   position: relative;
   margin: auto;
 }
-mySlides fade > img {
+.mySlides fade > img {
     width : 100%;
 }
 /* Caption text */
@@ -133,6 +133,7 @@ mySlides fade > img {
 
 .card {
 	border: none;
+  cursor: pointer;
 	border-radius: 5px;
   padding: 10px;
   margin: 10px;
@@ -179,4 +180,75 @@ mySlides fade > img {
 
 .Services{
   margin:100px 0px 100px 0px;
+}
+.pacakgeView {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  box-shadow: 5px 10px 10px  rgba(83, 83, 172, 0.5);
+  padding: 10px 50px 20px;
+  visibility: hidden;
+
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.pkgDesc{
+  margin-top: 10px;
+}
+.pkgDesc span {
+  display: flex;
+}
+.pkgDesc ul {
+  list-style-type: square;
+  display: inline-block;
+  padding-right: 30%;
+}
+
+.pacakgeView .errormsg span {
+  color: #f00;
+}
+
+.pacakgeView .packageName span {
+  font-family: "Patua One", serif;
+  font-size: x-large;
+  font-weight: 400;
+  font-style: normal;
+  color:blueviolet;
+  text-align: center;
+}
+.pacakgeView  .btns {
+  display: flex;
+  justify-content: center;
+}
+.pacakgeView  .btns  button {
+  background-color: rgba(4, 4, 172, 0.9);
+  font-weight: 500;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.6;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+.popuphead {
+  display: flex;
+  justify-content: space-between;
+}
+.popupClose img {
+  max-height: 25px;
+  cursor: pointer;
 }
