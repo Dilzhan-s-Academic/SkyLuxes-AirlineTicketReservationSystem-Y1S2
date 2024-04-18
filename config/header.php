@@ -18,7 +18,7 @@
                         <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/index.php">Home</a>
                     </li>
                     <li>
-                        <a href="#">Plan & Book</a>
+                        <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/plan.php">Plan & Book</a>
                     </li>
                     <li>
                         <a href="#">Services</a>
@@ -29,9 +29,10 @@
                     <li>
                         <a href="#">Contact Us</a>
                     </li>
-                </ul>
+                </ul> 
             </nav>
-            <a href="#"><button>Sign in/up</button></a>
+            <a href="#"><button>Sign in</button></a>
+            <a href="#"><button id="signupbtn">Sign up</button></a>
         </header>
     </body>
 </html>
