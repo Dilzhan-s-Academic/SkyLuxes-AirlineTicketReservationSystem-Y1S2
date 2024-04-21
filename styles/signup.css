@@ -2,10 +2,10 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     background-image: url(../images/signup\ background.jpeg);
+    background-size: cover;
     
 
 
@@ -75,6 +75,10 @@ font-weight: 500;
 }
 .wer{
     text-align: center;
+}
+
+.form{
+ text-align: center;   
 }
 
 
