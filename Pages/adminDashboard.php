@@ -1,4 +1,4 @@
-<!--Dilshan Yapa S Y C T it23366572-->
+<!--januda it23365346-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,20 +15,30 @@
                         <img src="../images/userProfilePic.jpeg" alt="user">
                     </div>
                     <div class="userName">
-                        <span>Dilzhan Yapa</span>
+                        <span>Januda Silunaka</span>
                     </div>
                     <div class="userBio">
-                        <span>Lorem ipsum is a placeholder text commonly used in publishing and graphic </span>
+                        <span>Sky Luxe Admin<br>User Management </span>
                     </div>
                 </div>
                 <div class="navList">
                     <ul class="linkList">
                         <a href="#">
-                            <li> Reservation Management </li>
+                            <li> Reports</li>
                         </a>
                         <a href="#">
-                            <li> Profile Management </li>
+                            <li> Reservation Management Panel </li>
                         </a>
+                        <a href="#">
+                            <li> Inventory Management Panel </li>
+                        </a>
+                        <a href="#">
+                            <li> User Management Panel </li>
+                        </a>
+                        <a href="#">
+                            <li> Settings </li>
+                        </a>
+
                         <a href="#">
                             <li style="background-color: #f00;color:#fff"> Log Out </li>
                         </a>
