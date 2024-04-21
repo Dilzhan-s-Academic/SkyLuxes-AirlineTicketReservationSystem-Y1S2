@@ -18,13 +18,14 @@
                 </div>
                 <div class="FooterLogo">
                     <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/logo.png" alt="SkyLuxe Logo" class="FooterLogo">
+                    <div class="subscribeMail">
+                        <form method="post" action="">
+                            <span>SUBSCRIBE TO OUR SPECIAL OFFERS</span>
+                            <input type="text" name="submail" placeholder="Enter Your Email Address">
+                            <input type="submit" name="submit">
+                    </div>
                 </div>
-                <div class="subscribeMail">
-                    <form method="post" action="">
-                        <span>SUBSCRIBE TO OUR SPECIAL OFFERS</span>
-                        <input type="text" name="submail" placeholder="Enter Your Email Address">
-                        <input type="submit" name="submit">
-                </div>
+                
                 <div class="rights">
                     <span>2024 © MLB_09.01_01 </span>
                 </div>
