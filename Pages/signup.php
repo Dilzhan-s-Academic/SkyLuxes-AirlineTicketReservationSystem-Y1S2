@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Privacy & Policy</title>
     <link rel = "stylesheet" type = "text/css" href = "../styles/signup.css">
+    
 </head>
-<body>
+<body> 
+
+    <?php include "../config/header.php" ?>
+
 <div class="terms-box">
     <div class="terms-text"> 
-        <h2 class="wer">sign in</h2>
+        <div class="form">
+        <h2 class="wer">Sign Up</h2>
         <form action = "submitRegistration.php" method = "POST" onsubmit = "return checkPassword()">
      
             First Name: <br/>
@@ -47,6 +53,7 @@
             <input type = "submit" value = "submit" id = "submitBtn" disabled>
             </center>-->
         </form>
+        </div>
        </div>
     
     
@@ -56,6 +63,7 @@
     </div>
 
 </div>
+<?php include "../config/footer.php" ?>
 
 
 </body>
