@@ -342,6 +342,7 @@
        
 
         </section>
+        
         <?php include "../config/footer.php" ?>
         <script src="../js/plan.js"></script>
     </body>
