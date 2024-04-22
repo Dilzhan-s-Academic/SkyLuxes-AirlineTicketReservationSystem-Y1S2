@@ -95,40 +95,44 @@
                         <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
                     </div>
                     <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                        <span>Tavel Package</span>
+                        <h3>Kyoto, Japan</h3>
                     </div>
                     <div class="btns">
                         <button id="Buy">Buy Now</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="openPopup('pacakgeView');">
                     <div class="thumbnail">
                         <img src="images/Packages/Cape Town, South Africa.jpg" alt="Package 1">
                     </div>
                     <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                        <span>Tavel Package</span>
+                        <h3>Cape Town, South Africa</h3>
                     </div>
                     <div class="btns">
                         <button id="Buy">Buy Now</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="openPopup('pacakgeView');">
                     <div class="thumbnail">
                         <img src="images/Packages/Istanbul, Turkey.jpg" alt="Package 1">
                     </div>
                     <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                        <span id="carddesc">Tavel Package</span>
+                        <h3>Istanbul, Turkey</h3>
                     </div>
                     <div class="btns">
                         <button id="Buy">Buy Now</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="openPopup('pacakgeView');">
                     <div class="thumbnail">
                         <img src="images/Packages/Machu Picchu.jpg" alt="Package 1">
                     </div>
                     <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                        <span id="carddesc">Tavel Package</span>
+                        <h3>Machu Picchu</h3>
                     </div>
                     <div class="btns">
                         <button id="Buy">Buy Now</button>
@@ -136,46 +140,48 @@
                 </div>
                 </div>
                 <div class="cardRow">
-                <div class="card">
+                <div class="card" onclick="openPopup('pacakgeView');">
                     <div class="thumbnail">
                         <img src="images/Packages/Maui, Hawaii.jpg" alt="Package 1">
                     </div>
                     <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                        <span id="carddesc">Tavel Package</span>                        <h3>Maui, Hawaii</h3>
                     </div>
                     <div class="btns">
                         <button id="Buy">Buy Now</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="openPopup('pacakgeView');">
                     <div class="thumbnail">
                         <img src="images/Packages/Rome, Italy.jpg" alt="Package 1">
                     </div>
                     <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                        <span id="carddesc">Tavel Package</span>
+                        <h3>Rome, Italy</h3>
                     </div>
                     <div class="btns">
                         <button id="Buy">Buy Now</button>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" onclick="openPopup('pacakgeView');">
                     <div class="thumbnail">
                         <img src="images/Packages/Santorini, Greece.jpg" alt="Package 1">
                     </div>
                     <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                        <span id="carddesc">Tavel Package</span>
+                        <h3>Santorini, Greece</h3>
                     </div>
                     <div class="btns">
                         <button id="Buy">Buy Now</button>
                     </div>
                 </div>
-
-                <div class="card">
+                <div class="card" onclick="openPopup('pacakgeView');">
                     <div class="thumbnail">
                         <img src="images/Packages/Paris, France.jpg" alt="Package 1">
                     </div>
                     <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                        <span id="carddesc">Tavel Package</span>
+                        <h3>Paris, France</h3>
                     </div>
                     <div class="btns">
                         <button id="Buy">Buy Now
@@ -247,23 +253,23 @@
             </div>
             
             <div class="pkgDesc">
-                <span>Destination : </span> <span id="pkgDestination"></span> 
-                <span>Duration : </span> <span id="pkgDestination"></span> 
-                <span>Price : </span> <span id="pkgDestination"></span> 
-                <span>Agent Name : </span> <span id="pkgDestination"></span> 
+                <span>Destination : </span> 
+                <span>Duration : </span>  
+                <span>Price : </span> 
+                <span>Agent Name : </span>  
                 <span>Services List : </span>
                     <ul>
                         <li>
-                            abc
+                            Services not avalable yet!
                         </li>
                         <li>
-                            abc
+                            Services not avalable yet!
                         </li>
                         <li>
-                            abc
+                            Services not avalable yet!
                         </li>
                         <li>
-                            abc
+                            Services not avalable yet!
                         </li>
                     </ul>
             </div>

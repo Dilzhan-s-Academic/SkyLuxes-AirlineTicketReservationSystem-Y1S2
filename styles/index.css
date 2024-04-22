@@ -132,9 +132,10 @@ img {vertical-align: middle;}
 }
 
 .card {
+  position: relative;
 	border: none;
   cursor: pointer;
-	border-radius: 5px;
+	border-radius: 10px;
   padding: 10px;
   margin: 10px;
 	background-color: rgb(255, 255, 255);
@@ -149,18 +150,36 @@ img {vertical-align: middle;}
   border-radius: 5px;
 }
 
-#carddesc {
-  text-align: justify;
+.desc {
+  display: block;
 }
+
+.desc span {
+  display: flex;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.desc h3 {
+  font-size: 30px;
+  margin-top: 30px;
+  color: #0c0a42;
+  justify-content: center;
+}
+
+
 .card > .btns > button {
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
   border: 1px solid #aaa;
-  border-radius: 5px;
-  width: 100%;
+  border-radius: 10px;
+  width: 90%;
   color:#f2f2f2;
   font-weight: 500;
   background-color:rgba(4, 4, 172, 0.8);
-  margin: 2px 0px 2px 0px;
-  padding: 10px 0px 10px 0px;
+  margin: 30px 0px 10px 0px;
+  padding: 10px 10px 10px 10px;
   cursor: pointer;
 }
 
@@ -211,11 +230,21 @@ img {vertical-align: middle;}
 }
 .pkgDesc span {
   display: flex;
+  margin-top: 10px;
 }
+
+.pkgDesc ul li {
+  margin-top: 10px;
+}
+
 .pkgDesc ul {
   list-style-type: square;
   display: inline-block;
   padding-right: 30%;
+}
+
+.pacakgeView .errormsg {
+  margin-top: 15px;
 }
 
 .pacakgeView .errormsg span {
