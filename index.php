@@ -45,8 +45,8 @@
                             <option value="ddd">ddd</option>
                             <option value="333">333</option>
                         </select>
-                        <input type="date" id="DayToGo">
-                        <input type="date" id="DayToCome">
+                        <input type="date" id="departureDate" data-placeholder="Departure Date">
+                        <input type="date" id="returnDate" data-placeholder="Return date">
                     </div>
                     <div class="form-elements">
                         <select name="DestinationAirport" id="DestinationAirport">
@@ -90,105 +90,20 @@
             <div class="Packages">
                 <h1>Our Travel Packages</h1>
                 <div class="cardRow">
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
+                    <div class="card" onclick="openPopup('pacakgeView');" style="background-image: url('images/Packages/Kyoto, Japan.jpg'); background-size: cover; background-position: center;">
                     </div>
-                    <div class="desc">
-                        <span>Tavel Package</span>
-                        <h3>Kyoto, Japan</h3>
+                    <div class="card" onclick="openPopup('pacakgeView');" style="background-image: url('images/Packages/Istanbul, Turkey.jpg'); background-size: cover; background-position: center;">
+                        
                     </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Cape Town, South Africa.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span>Tavel Package</span>
-                        <h3>Cape Town, South Africa</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Istanbul, Turkey.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>
-                        <h3>Istanbul, Turkey</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Machu Picchu.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>
-                        <h3>Machu Picchu</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
                 </div>
                 <div class="cardRow">
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Maui, Hawaii.jpg" alt="Package 1">
+                    <div class="card" onclick="openPopup('pacakgeView');" style="background-image: url('images/Packages/Rome, Italy.jpg'); background-size: cover; background-position: center;">
+                    
                     </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>                        <h3>Maui, Hawaii</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
+                    <div class="card" onclick="openPopup('pacakgeView');" style="background-image: url('images/Packages/Paris, France.jpg'); background-size: cover; background-position: center;">
+                        
                     </div>
                 </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Rome, Italy.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>
-                        <h3>Rome, Italy</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Santorini, Greece.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>
-                        <h3>Santorini, Greece</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Paris, France.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>
-                        <h3>Paris, France</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now
-                        </button>
-                    </div>
-                </div>
-            </div>
             </div>
 
             <div class="Services">
