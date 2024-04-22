@@ -58,10 +58,10 @@
                         path = 'Dashboard/loyaltyCust.php';
                         break;
                 }
-                fetch(path)
-                    .then(response => response.text())
+                fetch(path) //-> stream
+                    .then(response => response.text()) //response as a para
                     .then(data => {
-                        contentContainer.innerHTML= data;
+                        contentContainer.innerHTML= data; //stream -> text
                     })
                     .catch(error => console.error('Error fetching content:', error));
             }

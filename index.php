@@ -90,7 +90,7 @@
             <div class="Packages">
                 <h1>Our Travel Packages</h1>
                 <div class="cardRow">
-                <div class="card">
+                <div class="card" onclick="openPopup('pacakgeView');">
                     <div class="thumbnail">
                         <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
                     </div>
@@ -236,12 +236,48 @@
                 
             </div>
         </div>
+        <div class="pacakgeView" id="pacakgeView">
+            <div class="popuphead">
+                <div class="packageName">
+                    <span id="pkgName">Package Name</span>
+                </div>
+                <div class="popupClose">
+                    <img src="images/Icons/close.png" alt="close" onclick="closePopup('pacakgeView');">
+                </div>
+            </div>
+            
+            <div class="pkgDesc">
+                <span>Destination : </span> <span id="pkgDestination"></span> 
+                <span>Duration : </span> <span id="pkgDestination"></span> 
+                <span>Price : </span> <span id="pkgDestination"></span> 
+                <span>Agent Name : </span> <span id="pkgDestination"></span> 
+                <span>Services List : </span>
+                    <ul>
+                        <li>
+                            abc
+                        </li>
+                        <li>
+                            abc
+                        </li>
+                        <li>
+                            abc
+                        </li>
+                        <li>
+                            abc
+                        </li>
+                    </ul>
+            </div>
+            <div class="errormsg">
+                <span>&#9888; Dear customers,this Package is Not avalable yet.</span>
+            </div>
+            <div class="btns">
+                <button id="Buy" disabled>Buy Now</button>
+            </div>
+        </div>
 
         <?php include "./config/footer.php" ?>
-
-        <script src="js/slideshow.js">
-            
-        </script>
+        <script src="js/slideshow.js"></script>
+        <script src="js/popupWindow.js"></script>
         
     </body>
 </html>

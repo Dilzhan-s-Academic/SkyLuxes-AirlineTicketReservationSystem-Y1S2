@@ -5,7 +5,7 @@ footer{
     display: flex;
     justify-content: center;
 }
-.footerContainer > .rights > span {
+.footerContainer .rights span {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -13,7 +13,7 @@ footer{
     font-weight: 400;
     margin-bottom: 10px;
 }
-.footerContainer > .FooterLogo {
+.footerContainer .FooterLogo {
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -21,13 +21,40 @@ footer{
 }
 
 .FooterLogo {
-    height: 100px;
+    height: 160px;
+    align-items: center;
+}
+
+.FooterLogo img {
 	cursor: pointer;
 }
-.footerContainer > .FooterNav {
+.footerContainer .FooterNav {
     margin: 10px 0px 10px 0px;
 }
-.FooterNav > a {
+
+.FooterNav a {
     color: #f2f2f2;
     text-decoration: none;
+}
+
+.subscribeMail , .subscribeMail form span {
+    display: flex;
+    justify-content: center;
+    color:#ac9f9fc2;
+}
+
+.subscribeMail form input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+.subscribeMail form input[type=submit] {
+    cursor: pointer;
+    background-color: rgb(26, 84, 26, 0.9);
+}
+.subscribeMail form input[type=submit]:hover {
+    background-color: rgb(26, 84, 26, 0.8);
+}
+.subscribeMail form input[type=submit]:active {
+    background-color: rgb(26, 84, 26, 1);
 }

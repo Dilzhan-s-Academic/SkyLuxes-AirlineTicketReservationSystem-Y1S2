@@ -77,7 +77,7 @@
                 opacity: 1;
             }
             .viewReservation {
-                position: absolute;
+                position: fixed;
                 text-align: center;
                 top: 60%;
                 left: 50%;

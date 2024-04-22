@@ -56,3 +56,14 @@ header > a > button:hover{
 	background-color: rgba(0,136,169,0.5);
 }
 
+#signupbtn {
+	background-color: rgba(255,69,0,0.7);
+}
+
+#signupbtn:hover {
+	background-color: rgba(255, 68, 0, 0.8);
+}
+
+#signupbtn:active {
+	background-color: rgba(255, 68, 0, 1);
+}

@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    align-items: left;
+    justify-content: left;
+    background-image: url(../images/signup\ background.jpeg);
+    background-size: cover;
+    
+
+
+}
+
+.terms-box{
+max-width: 460px;
+background-color:black;
+color: aliceblue;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 60px 30px;
+
+}
+
+.terms-text{
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color:white;
+}
+
+.terms-text::-webkit-scrollbar{
+    width: 2px;
+    background-color: black;
+
+}
+
+.terms-text::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+
+.terms-text h2{
+    text-transform: uppercase;
+}
+.terms-box h4{
+    font-size: 13px;
+    text-align: center;
+    padding: 0  40px;
+}
+
+.terms-box h4 span{
+
+    color: red;
+}
+
+.buttons{
+display: flex;
+padding: 0 20px;
+justify-content: center;
+color: red;
+
+}
+.red_button{
+    color: red;
+    height: 50px;
+width: calc(70% - 6px);
+border-radius: 6px;
+border: 0;
+font-size: 20px;
+font-weight: 500;
+
+}
+.red_button :hover{
+    color: red;
+}
+.wer{
+    text-align: center;
+}
+
+.form{
+ text-align: center;   
+}
+
+
+
