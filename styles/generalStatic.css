@@ -42,6 +42,7 @@
     text-decoration: none;
 }
 .menuLinks > a > li {
+    text-align: center;
     background-color: #fff;
     border-radius: 5px;
     padding: 10px;
