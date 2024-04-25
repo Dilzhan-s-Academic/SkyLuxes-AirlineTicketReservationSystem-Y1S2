@@ -21,18 +21,18 @@
                         <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/plan.php">Plan & Book</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/services.php">Services</a>
                     </li>
                     <li>
                         <a href="#">SkyLuxe</a>
                     </li>
                     <li>
-                        <a href="#">Contact Us</a>
+                        <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/contactUs.php">Contact Us</a>
                     </li>
                 </ul> 
             </nav>
             <a href="#"><button>Sign in</button></a>
-            <a href="#"><button id="signupbtn">Sign up</button></a>
+            <a href="../Pages/signup.php"><button id="signupbtn">Sign up</button></a>
         </header>
     </body>
 </html>
