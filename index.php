@@ -204,10 +204,42 @@
                         <button>Contact Us</button>
                     </div>
                 </div>
+                
                 <div class="rightContent">
-                    <img src="images/Services/raychan-mnypcmLnXE0-unsplash.jpg"
+                    <img src="images/Services/raychan-mnypcmLnXE0-unsplash.jpg">
                 </div>
             </div>
+            <div class="aboutUs">
+                <div class="head">
+                    <h2>About Us</h2>
+                </div>
+                <div class="para">
+                    <p>
+                        Welcome to Skyluxe Airline's Ticket Reservation System! We're here to make booking your flights simple and stress-free. Enjoy seamless travel planning with us!
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="holders">
+                        <img src="images/AboutUS/airline.png" alt="Our Business">
+                        <label>Our Business</label>
+                    </div>
+
+                    <div class="holders">
+                        <img src="images/AboutUS/Planet.png" alt="Our Planet">
+                        <label>Our Planet</label>
+                    </div>
+
+                    <div class="holders">
+                        
+                        <img src="images/AboutUS/People.png" alt="Our People">
+                        <label>Our People</label>
+                    </div>
+
+                    <div class="holders">
+                        <img src="images/AboutUS/Community.png" alt="Our Community">
+                        <label>Our Community</label>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -250,7 +282,7 @@
                 <button id="Buy" disabled>Buy Now</button>
             </div>
         </div>
-
+        
         <?php include "./config/footer.php" ?>
         <script src="js/slideshow.js"></script>
         <script src="js/popupWindow.js"></script>
