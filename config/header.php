@@ -32,7 +32,7 @@
                 </ul> 
             </nav>
             <a href="#"><button>Sign in</button></a>
-            <a href="#"><button id="signupbtn">Sign up</button></a>
+            <a href="../Pages/signup.php"><button id="signupbtn">Sign up</button></a>
         </header>
     </body>
 </html>
