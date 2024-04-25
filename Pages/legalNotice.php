@@ -25,10 +25,10 @@
                     <a href="generalNotice.php">
                         <li>General Notices</li>
                     </a>
-                    <a href="#">
+                    <a href="privacypolicy.php">
                         <li>Privacy & Policies</li>
                     </a>
-                    <a href="#">
+                    <a href="termsCondition.php">
                         <li>Terms & Conditions</li>
                     </a>
                     <a href="legalNotice.php">

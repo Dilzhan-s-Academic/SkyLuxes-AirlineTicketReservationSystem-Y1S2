@@ -387,6 +387,7 @@ img {vertical-align: middle;}
 }
 .aboutUs .content .holders {
   display: inline-block;
+  cursor: pointer;
 }
 .aboutUs .content .holders img {
   display: block;
