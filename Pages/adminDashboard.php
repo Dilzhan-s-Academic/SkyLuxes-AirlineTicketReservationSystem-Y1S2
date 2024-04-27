@@ -5,6 +5,8 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/dashboard.css">
+        <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
+        <title>Sky Luxe | Admin Dashboard</title>
     </head>
     <body>
         <?php include "../config/header.php" ?>

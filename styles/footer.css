@@ -3,6 +3,7 @@
 footer{
     background-color: #24252A;
     display: flex;
+    margin-top: auto;
     justify-content: center;
 }
 .footerContainer .rights span {

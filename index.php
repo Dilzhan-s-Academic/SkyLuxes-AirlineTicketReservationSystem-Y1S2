@@ -92,7 +92,7 @@
         </div>
         <div class="body-content">
             <div class="contactus">
-                <div class="support" onclick="Pages/contactUs.php">
+                <div class="support" onclick="">
                     <img src="images/icons/help.png">
                     <div class="conContent">
                         <span>We are currently open and ready to assist you.</span>

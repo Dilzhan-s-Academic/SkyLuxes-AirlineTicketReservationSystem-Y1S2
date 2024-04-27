@@ -31,8 +31,8 @@
                     </li>
                 </ul> 
             </nav>
-            <a href="../Pages/signIn.php"><button>Sign in</button></a>
-            <a href="../Pages/signup.php"><button id="signupbtn">Sign up</button></a>
+            <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/signIn.php"><button>Sign in</button></a>
+            <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/signup.php"><button id="signupbtn">Sign up</button></a>
         </header>
     </body>
 </html>

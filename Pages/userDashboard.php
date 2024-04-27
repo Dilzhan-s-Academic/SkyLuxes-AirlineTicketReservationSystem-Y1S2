@@ -6,6 +6,8 @@
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/dashboard.css">
         <script src="../js/popupWindow.js"></script>
+        <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
+        <title>Sky Luxe | User Dashboard</title>
     </head>
     <body>
         <?php include "../config/header.php" ?>

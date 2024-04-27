@@ -1,36 +1,28 @@
 /*N H D DILHARA IT23349438 */
-*{
-    box-sizing: border-box;
-	margin: 0px;
-	border: 0px;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
+
+.content-data {
+    max-width: calc(100% - 320px);
 }
 
-body{
-    font-family: Arial;
+.content {
+    margin-top: 30px;
+    max-width: 100%;
 }
-
-h1,h4{
-    font-weight:bold;
-    font-style: normal;
-    color:black;
+.header {
     text-align: center;
-    margin: 10px 0px 10px 5px;
 }
-
-.para{
-    font-style: normal;
-    color:rgb(10, 61, 155);
-    text-align: center;
+.header span {
+    opacity: 0.7;
+    font-weight: 500;
 }
 
 .card{
-    width: 18%;
+    width: calc(100% / 3);
     display: inline-block;
+    padding: 10px;
     background-color: white;
     border-radius: 10px;
-    margin: 40px;
+    margin: 40px 25px;
     box-shadow: 3px 3px 10px black;
 
 }
@@ -65,4 +57,9 @@ button{
 button:hover{
     background-color: rgb(16, 63, 235);
     color: white;
+}
+
+.cardRow {
+    display: flex;
+    justify-content: space-evenly;
 }

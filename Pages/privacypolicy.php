@@ -6,6 +6,8 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/generalStatic.css">
+        <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
+        <title>Sky Luxe | Privacy Policy</title>
     </head>
     <body>
         <?php include "../config/header.php" ?>
@@ -15,7 +17,7 @@
         </div>
         
         <div class="body-content">
-            <div class="legalMenu">
+            <div class="sideMenu">
                 <div class="menuHeader">
                     <span id="title">Legal Menu</span>
                 </div>

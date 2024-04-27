@@ -6,6 +6,8 @@
         <link rel="stylesheet" type="text/css" href="../styles/plan.css">
         <link rel="stylesheet" href="https://flightDetails.fontawesome.com/releases/v5.10.0/css/all.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
+        <title>Sky Luxe | Booking and Plan</title>
     </head>
     <body>
         <?php include "../config/header.php" ?>

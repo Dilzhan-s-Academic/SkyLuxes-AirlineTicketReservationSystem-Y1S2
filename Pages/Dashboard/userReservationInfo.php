@@ -14,7 +14,6 @@
                 max-width: 100%;
                 padding: 10px 10px 50px 10px;
                 background-color: #d8d9d85f;
-                margin-top:-30px;
             }
             h1,h3 {
                 text-align: left;
