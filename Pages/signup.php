@@ -16,7 +16,7 @@
         </div>
         <div class="form">
             <h2>Sign Up</h2>
-            <form method="post" action="">
+            <form method="post" action="../Process/signUp.php">
                 <label>First Name : </label>
                     <input type="text" id="fname" name="fname" placeholder="First Name" pattern="[A-Z][a-z]+" required>
                 <label>Last Name :</label>

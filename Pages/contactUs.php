@@ -49,7 +49,7 @@
                     </div>
                     <div class="content">
                         <h3>General Quaries</h3>
-                        <h4>+94 79 123 4 567</h4>
+                        <h4>+94 11 123 4 567</h4>
                         <hr>
                         <p><span>Additional Note :</span> Sinhala speakers are available from 08:00 to 18:00 Mondays to Fridays, and from 09:00 to 17:00 on Saturdays and Sundays. English and French speakers are available 24/7.</p>
                     </div>

@@ -22,34 +22,13 @@
                 <label>Password :</label>
                     <input type="password" id="pwd" name="pwd" placeholder="Password" pattern="[a-z A-Z 0-9 \. @ % #]{8,}{8,}" required>
                 <div class="submitButton">
-                    <a href="signIn.php">Do you already have an Account ? </a>
+                    <a href="signup.php">Do you want to create an Account ? </a>
                     <input type="submit" value="Sign In" name="SignIn">
                 </div>
             </form>
         </div>
     </div>
-    <script>
-        function checkPwd(){
-                        var pwd = document.getElementById('newpwd').value;
-                        var cnfmpwd = document.getElementById('cnfmpwd').value;
-                        var msg = document.getElementById('pwdStat');
-                        var submitbtn = document.getElementById('submitBtn');
-                        
-                        if(cnfmpwd == '' ) {
-                            msg.innerHTML = "";
-                            msg.style.color = "";
-                            submitbtn.disabled = true;
-                        }else if(pwd != cnfmpwd){
-                            msg.innerHTML = "Password Doesn't Matched!!";
-                            msg.style.color = "red";
-                            submitbtn.disabled = true;
-                        }else {
-                            msg.innerHTML = "Password Matched!!";
-                            msg.style.color = "green";
-                            submitbtn.disabled = false;
-                        }
-            }
-    </script>
+   
     <?php include "../config/footer.php" ?>
 </body>
 </html>
