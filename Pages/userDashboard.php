@@ -26,18 +26,10 @@
                 </div>
                 <div class="navList">
                     <ul class="linkList">
-                        <a href="#" id="resv" onclick="loadContent('myresrv');">
-                            <li> My Reservations </li>
-                        </a>
-                        <a href="#" id="info" onclick="loadContent('myinfo');">
-                            <li> Profile Information </li>
-                        </a>
-                        <a href="#" id="info" onclick="loadContent('loyalty');">
-                            <li> Loyalty Customer </li>
-                        </a>
-                        <a href="#" id="logout">
-                            <li style="background-color: #f00;color:#fff"> Log Out </li>
-                        </a>
+                        <li onclick="loadContent('myresrv');"> My Reservations </li>
+                        <li onclick="loadContent('myinfo');"> Profile Information </li>
+                        <li onclick="loadContent('loyalty');"> Loyalty Customer </li>
+                        <li style="background-color: #f00;color:#fff" onclick="if(window.confirm('Do you want to Sign Out?')){document.location = '../Process/signOut-Process.php';}" id="logout"> Sign Out </li>
                     </ul>
                 </div>
             </div>

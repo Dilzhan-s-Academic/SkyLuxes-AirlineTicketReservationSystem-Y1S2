@@ -44,7 +44,7 @@
                 text-align: center;
                 padding: 10px;
             }
-            label {
+            td label {
                 display: inline-block;
                 padding: 5px 10px;
                 cursor: pointer;

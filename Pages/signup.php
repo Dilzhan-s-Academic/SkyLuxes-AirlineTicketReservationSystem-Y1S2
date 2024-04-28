@@ -16,7 +16,7 @@
         </div>
         <div class="form">
             <h2>Sign Up</h2>
-            <form method="post" action="../Process/signUp.php">
+            <form method="post" action="../Process/signUp-Process.php">
                 <label>First Name : </label>
                     <input type="text" id="fname" name="fname" placeholder="First Name" pattern="[A-Z][a-z]+" required>
                 <label>Last Name :</label>
@@ -35,6 +35,7 @@
                 <label>Confirm Password :</label>
                     <input  type="password" id="cnfmpwd" name="cnfmpwd" placeholder="Confirm Password" oninput="checkPwd()" pattern="[a-z A-Z 0-9 \. @ % #]{8,}" required>
                     <span id="pwdStat"></span>
+                    <span id="err"><?php if(isset($_GET['err'])){ echo "<br/>"."&#9888; ".$_GET['err'];} ?></span>
 
                 <div class="submitButton">
                     <a href="signIn.php">Do you already have an Account ? </a>

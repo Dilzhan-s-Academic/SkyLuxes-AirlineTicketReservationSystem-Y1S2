@@ -25,25 +25,12 @@
                 </div>
                 <div class="navList">
                     <ul class="linkList">
-                        <a href="#">
-                            <li> Reports</li>
-                        </a>
-                        <a href="#">
-                            <li> Reservation Management Panel </li>
-                        </a>
-                        <a href="#">
-                            <li> Inventory Management Panel </li>
-                        </a>
-                        <a href="#">
-                            <li> User Management Panel </li>
-                        </a>
-                        <a href="#">
-                            <li> Settings </li>
-                        </a>
-
-                        <a href="#">
-                            <li style="background-color: #f00;color:#fff"> Log Out </li>
-                        </a>
+                        <li> Reports</li>
+                        <li> Reservation Management Panel </li>
+                        <li> Inventory Management Panel </li>
+                        <li> User Management Panel </li>
+                        <li> Settings </li>
+                        <li style="background-color: #f00;color:#fff" onclick=" if(window.confirm('Do you want to Sign Out?')){document.location = '../Process/signOut-Process.php';}"> Sign Out </li>
                     </ul>
                 </div>
             </div>

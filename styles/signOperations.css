@@ -65,3 +65,7 @@
     background-color: rgba(0, 0, 255, 0.844);
     transform: scale(0.9);
 }
+
+#err {
+    color: red;
+}
