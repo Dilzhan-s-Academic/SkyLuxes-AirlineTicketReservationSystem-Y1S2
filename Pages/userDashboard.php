@@ -1,5 +1,13 @@
 <!--Dilshan Yapa S Y C T it23366572-->
 
+<?php 
+    include "../config/header.php";
+    if(!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !=0)
+    {
+        header('Location: ../Pages/signIn.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,7 +18,6 @@
         <title>Sky Luxe | User Dashboard</title>
     </head>
     <body>
-        <?php include "../config/header.php" ?>
         <div class="body-content">
             <div class="userDashboardMenu">
                 <div class="user">
@@ -18,10 +25,7 @@
                         <img src="../images/userProfilePic.jpeg" alt="user">
                     </div>
                     <div class="userName">
-                        <span>DilZhan Yapa</span>
-                    </div>
-                    <div class="userBio">
-                        <span>Lorem ipsum is a placeholder text commonly used in publishing and graphic </span>
+                        <span><?php echo $_SESSION['fname']." ".$_SESSION['lname']; ?></span>
                     </div>
                 </div>
                 <div class="navList">

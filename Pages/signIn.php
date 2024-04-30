@@ -1,4 +1,18 @@
 
+<?php 
+    include "../config/header.php";
+    if(isset($_SESSION['username']))
+    {   
+        if($_SESSION['is_admin'] == 0)
+        {
+            header('Location: ../Pages/userDashboard.php');
+        } elseif($_SESSION['is_admin']== 1){
+            header('Location: ../Pages/adminDashboard.php');
+        }
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +23,6 @@
     
 </head>
 <body> 
-    <?php include "../config/header.php" ?>
     <div class="body-content">
         <div class="image">
             <img src="../images/others/signIn.png" alt="signUp image">

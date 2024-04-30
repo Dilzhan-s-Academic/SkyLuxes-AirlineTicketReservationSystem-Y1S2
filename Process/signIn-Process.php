@@ -5,7 +5,7 @@
         
         $username = mysqli_real_escape_string($conn, $_POST['username']);
         $password = mysqli_real_escape_string($conn, $_POST['pwd']);
-        $quary = "SELECT Username,Is_Admin,Email,FirstName FROM User WHERE Username = '$username' AND Password = '$password' LIMIT 1";
+        $quary = "SELECT Username,Is_Admin,Email,FirstName,LastName FROM User WHERE Username = '$username' AND Password = '$password' LIMIT 1";
 
         $result = mysqli_query($conn,$quary);
 
@@ -14,6 +14,7 @@
             
             $_SESSION['username'] = $row['Username'];
             $_SESSION['fname'] = $row['FirstName'];
+            $_SESSION['lname'] = $row['LastName'];
             $_SESSION['email'] = $row['Email'];
             $_SESSION['is_admin'] = $row['Is_Admin'];
 
