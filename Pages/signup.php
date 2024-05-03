@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Privacy & Policy</title>
+    <title>Sign Up</title>
     <link rel = "stylesheet" type = "text/css" href = "../styles/signup.css">
     
 </head>
 <body> 
 
     <?php include "../config/header.php" ?>
+    <h1 class="abcd">Join SkyLuxe Airline</h1></h1>
 
 <div class="terms-box">
     <div class="terms-text"> 
@@ -49,6 +50,10 @@
             <br>
             <input type = "checkbox" class = "inputStyle" id = "checkbox" onclick = "enableButton()">Accept Privancy Policy and Terms<br/><br/>
             
+            <h4>I agree to the <span>Tearms of Services</span> and I read the Privacy Policy notice </h4>
+    <div class="buttons">
+        <button class="red_button">Sign In</button>
+    </div>
             <!--<center>
             <input type = "submit" value = "submit" id = "submitBtn" disabled>
             </center>-->
@@ -57,10 +62,7 @@
        </div>
     
     
-    <h4>I agree to the <span>Tearms of Services</span> and I read the Privacy Policy notice </h4>
-    <div class="buttons">
-        <button class="red_button">Sign In</button>
-    </div>
+    
 
 </div>
 <?php include "../config/footer.php" ?>
