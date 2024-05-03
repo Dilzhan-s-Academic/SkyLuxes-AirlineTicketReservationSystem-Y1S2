@@ -1,6 +1,19 @@
 /* Dilshan Yapa S Y C T it23366572 */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+header{
+	display: flex;
+	justify-content: flex-end;
+	background-color: #24252A;
+	align-items: center;
+	padding: 1px 15px 2px 2px;
+}
+
+a {
+	text-decoration: none;
+}
 
 header > nav > ul > li , header > nav > ul > li > a , header > a >  button {
 	font-family: "Montserrat",sans-serif ;
@@ -10,13 +23,6 @@ header > nav > ul > li , header > nav > ul > li > a , header > a >  button {
 	text-decoration: none;
 }
 
-header{
-	display: flex;
-	justify-content: flex-end;
-	background-color: #24252A;
-	align-items: center;
-	padding: 1px 15px 2px 2px;
-}
 header > .logoLink {
 	margin-right: auto;
 }
@@ -55,7 +61,12 @@ header > a > button{
 header > a > button:hover{
 	background-color: rgba(0,136,169,0.5);
 }
-
+.headerUserBtns > a {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 #signupbtn {
 	background-color: rgba(255,69,0,0.7);
 }
@@ -66,4 +77,20 @@ header > a > button:hover{
 
 #signupbtn:active {
 	background-color: rgba(255, 68, 0, 1);
+}
+header  a{
+	display: flex;
+	align-items: center;
+}
+header  a label{
+	font-family: "Kanit", sans-serif;
+	color: #fff;
+	font-weight: 500;
+	font-size: large;
+}
+
+#userbtnimg {
+	width: 50px;
+	margin-right: 10px;
+	cursor: pointer;
 }

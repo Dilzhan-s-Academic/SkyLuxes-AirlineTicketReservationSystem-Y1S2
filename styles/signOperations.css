@@ -1,0 +1,73 @@
+/* Dilshan Yapa S Y C T it23366572 */
+
+.body-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.body-content .image {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body-content .image img {
+    width: 90%;
+}
+
+.form {
+    background-color: #F8F8FF;
+    border-radius: 20px;
+    margin-top: 50px;
+    display: inline-block;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+    padding: 20px 40px;
+    width: 50%;
+}
+.form h2 {
+    margin-bottom: 80px;
+}
+.form form label {
+    display: flex;
+    margin: 10px 0px 10px 0px;
+}
+.form form input {
+    padding: 10px 20px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100%;
+}
+
+.submitButton {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.submitButton input[type=submit] {
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #F8F8FF;
+    font-weight: 500;
+    width: fit-content;
+    font-size: large;
+    align-items: flex-end;
+    transition: transform 0.2s ease;
+}
+
+.submitButton input[type=submit]:hover {
+    background-color: rgba(0, 0, 255, 0.759);
+}
+
+.submitButton input[type=submit]:active {
+    background-color: rgba(0, 0, 255, 0.844);
+    transform: scale(0.9);
+}
+
+#err {
+    color: red;
+}

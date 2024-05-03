@@ -1,14 +1,23 @@
 <!--Dilshan Yapa S Y C T it23366572-->
 
+<?php 
+    include "../config/header.php";
+    if(!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !=0)
+    {
+        header('Location: ../Pages/signIn.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/dashboard.css">
         <script src="../js/popupWindow.js"></script>
+        <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
+        <title>Sky Luxe | User Dashboard</title>
     </head>
     <body>
-        <?php include "../config/header.php" ?>
         <div class="body-content">
             <div class="userDashboardMenu">
                 <div class="user">
@@ -16,26 +25,15 @@
                         <img src="../images/userProfilePic.jpeg" alt="user">
                     </div>
                     <div class="userName">
-                        <span>DilZhan Yapa</span>
-                    </div>
-                    <div class="userBio">
-                        <span>Lorem ipsum is a placeholder text commonly used in publishing and graphic </span>
+                        <span><?php echo $_SESSION['fname']." ".$_SESSION['lname']; ?></span>
                     </div>
                 </div>
                 <div class="navList">
                     <ul class="linkList">
-                        <a href="#" id="resv" onclick="loadContent('myresrv');">
-                            <li> My Reservations </li>
-                        </a>
-                        <a href="#" id="info" onclick="loadContent('myinfo');">
-                            <li> Profile Information </li>
-                        </a>
-                        <a href="#" id="info" onclick="loadContent('loyalty');">
-                            <li> Loyalty Customer </li>
-                        </a>
-                        <a href="#" id="logout">
-                            <li style="background-color: #f00;color:#fff"> Log Out </li>
-                        </a>
+                        <li onclick="loadContent('myresrv');"> My Reservations </li>
+                        <li onclick="loadContent('myinfo');"> Profile Information </li>
+                        <li onclick="loadContent('loyalty');"> Loyalty Customer </li>
+                        <li style="background-color: #f00;color:#fff" onclick="if(window.confirm('Do you want to Sign Out?')){document.location = '../Process/signOut-Process.php';}" id="logout"> Sign Out </li>
                     </ul>
                 </div>
             </div>

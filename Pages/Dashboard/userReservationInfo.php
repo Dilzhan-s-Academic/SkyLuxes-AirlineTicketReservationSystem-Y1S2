@@ -1,4 +1,5 @@
 <!--Dilshan Yapa S Y C T it23366572-->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,7 +15,6 @@
                 max-width: 100%;
                 padding: 10px 10px 50px 10px;
                 background-color: #d8d9d85f;
-                margin-top:-30px;
             }
             h1,h3 {
                 text-align: left;
@@ -45,7 +45,7 @@
                 text-align: center;
                 padding: 10px;
             }
-            label {
+            td label {
                 display: inline-block;
                 padding: 5px 10px;
                 cursor: pointer;

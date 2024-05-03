@@ -6,6 +6,10 @@
     <head>
         <link rel="stylesheet" type="text/css" href="styles/generalStyle.css">
         <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link rel="icon" type="image/x-icon" href="images/Icons/favicon.png">
+        <title>Sky Luxe | Home</title>
+        
+
         
     </head>
     <body>
@@ -41,22 +45,42 @@
                     <div class="form-elements">
                         <select name="DepartureAirport" id="DepartureAirport">
                             <option disabled selected value> From </option>
-                            <option value="abc">abc</option>
-                            <option value="ddd">ddd</option>
-                            <option value="333">333</option>
+                            <?php
+                                include("config/dbConn.php");
+                                $sql = "SELECT Airport_ID,Name FROM airport ORDER BY Name;";
+                                $result = mysqli_query($conn,$sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    while ($row = $result->fetch_assoc()) {
+                                        echo "<option value=\"".$row['Airport_ID']."\">".$row['Name']."</option>";
+                                    }
+                                }else {
+                                    echo "<option value=\"".$row['Name']."\" disabled selected value>".$row['Name']."</option>";
+                                }
+                            ?>
                         </select>
-                        <input type="date" id="DayToGo">
-                        <input type="date" id="DayToCome">
+                        <input type="date" id="departureDate" data-placeholder="Departure Date">
+                        <input type="date" id="returnDate" data-placeholder="Return date">
                     </div>
                     <div class="form-elements">
                         <select name="DestinationAirport" id="DestinationAirport">
                             <option disabled selected value> To </option>
-                            <option value="abc">abc</option>
-                            <option value="ddd">ddd</option>
-                            <option value="333">333</option>
+                            <?php
+                                include("config/dbConn.php");
+                                $sql = "SELECT Airport_ID,Name FROM airport ORDER BY Name;";
+                                $result = mysqli_query($conn,$sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    while ($row = $result->fetch_assoc()) {
+                                        echo "<option value=\"".$row['Airport_ID']."\">".$row['Name']."</option>";
+                                    }
+                                }else {
+                                    echo "<option value=\"".$row['Name']."\" disabled selected value>".$row['Name']."</option>";
+                                }
+                            ?>
                         </select>
                         <select name="SheetCount" id="SheetCount">
-                            <option disabled selected value> Sheet Count </option>
+                            <option disabled selected value> Seat Count </option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -87,161 +111,159 @@
             </div>
         </div>
         <div class="body-content">
+            <div class="contactus">
+                <div class="support" onclick="">
+                    <img src="images/icons/help.png">
+                    <div class="conContent">
+                        <span>We are currently open and ready to assist you.</span>
+                        <span id="tel">call +94 11 1234567</span>
+                    </div>
+                    
+                </div>
+                <div class="support">
+                    <img src="images/icons/help2.png">
+                    <div class="conContent">
+                        <span>Flight Inquiry</span>
+                        <span id="tel">call +94 11 1234567</span>
+                    </div>
+                </div>
+                <div class="support">
+                    <img src="images/icons/help3.png">
+                    <div class="conContent">
+                        <span>Refund Inquiry</span>
+                        <span id="tel">call +94 11 1234567</span>
+                    </div>
+                </div>
+            </div>
+            
             <div class="Packages">
                 <h1>Our Travel Packages</h1>
                 <div class="cardRow">
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
+                    <div class="card" onclick="openPopup('pacakgeView');" style="background-image: url('images/Packages/Kyoto, Japan.jpg');">
+                        <div class="package">
+                            <div class="packDetails">
+                                <span id="name">Kyoto, Japan</span>
+                                <span id="desc">Kyoto, Japan, steeped in rich history and tradition, is renowned for its stunning temples, serene gardens, and preserved cultural heritage.
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="desc">
-                        <span>Tavel Package</span>
-                        <h3>Kyoto, Japan</h3>
+                    <div class="card" onclick="openPopup('pacakgeView');" style="background-image: url('images/Packages/Istanbul, Turkey.jpg');">
+                        <div class="package">
+                            <div class="packDetails">
+                                <span id="name">Istanbul, Turkey</span>
+                                <span id="desc">Istanbul, Turkey, straddling two continents, exudes a mesmerizing blend of East and West, where ancient mosques, bustling bazaars, and modern delights converge along the scenic Bosphorus.
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Cape Town, South Africa.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span>Tavel Package</span>
-                        <h3>Cape Town, South Africa</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Istanbul, Turkey.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>
-                        <h3>Istanbul, Turkey</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Machu Picchu.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>
-                        <h3>Machu Picchu</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
                 </div>
                 <div class="cardRow">
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Maui, Hawaii.jpg" alt="Package 1">
+                    <div class="card" onclick="openPopup('pacakgeView');" style="background-image: url('images/Packages/Rome, Italy.jpg');">
+                        <div class="package">
+                            <div class="packDetails">
+                                <span id="name">Rome, Italy</span>
+                                <span id="desc">Rome, Italy, the Eternal City, boasts a timeless blend of ancient ruins, Renaissance architecture, and delectable cuisine, embodying centuries of history and culture.
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>                        <h3>Maui, Hawaii</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Rome, Italy.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>
-                        <h3>Rome, Italy</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
+                    <div class="card" onclick="openPopup('pacakgeView');" style="background-image: url('images/Packages/Paris, France.jpg');">
+                        <div class="package">
+                            <div class="packDetails">
+                                <span id="name">Paris, France</span>
+                                <span id="desc">
+                                    Paris, France, the City of Light, captivates with its iconic landmarks, romantic ambiance, and vibrant arts scene.
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Santorini, Greece.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>
-                        <h3>Santorini, Greece</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
-                <div class="card" onclick="openPopup('pacakgeView');">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Paris, France.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Tavel Package</span>
-                        <h3>Paris, France</h3>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now
-                        </button>
-                    </div>
-                </div>
-            </div>
             </div>
 
             <div class="Services">
-                <h1>Our Services</h1>
-                <div class="cardRow">
-                <div class="card">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
+                <div class="leftContent">
+                    <div class="heading">
+                        <h3>Sky Luxe Services</h3>
+                        <span>
+                            Skluxe Airlines' intuitive online booking platform makes reserving flights a breeze. Search for flights, compare options, and book seamlessly with real-time availability and pricing. Manage bookings, choose extras, and plan your entire trip effortlessly.
+                        </span>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
+                <div class="rightEmptyContent">
                 </div>
-                <div class="card">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
+            </div>
+            <div class="custSatist">
+                <div class="leftContent">
+                    <h3>Customer Satistfaction</h3>
+                    <span>
+                        Experience unparalleled satisfaction with Skyluxe Airlines, where every journey is crafted to exceed your expectations.
+                    </span>
+                    <div class="count">
+                        <div class="happyCustCount">
+                            <div class="content">
+                                <span id="countCal">+8</span>
+                                <span id="countTitle">Happy Customers</span>
+                            </div>
+                            <div class="logo">
+                                <img src="images/Icons/user.png" alt="customer">
+                            </div>
+                        </div>
+                        <div class="ClientSatist">
+                            <div class="content">
+                                <span id="countCal">+18</span>
+                                <span id="countTitle">Client Satisfied</span>
+                            </div>
+                            <div class="logo">
+                                <img src="images/Icons/user-2.png" alt="customer">
+                            </div>
+                        </div>
                     </div>
-                    <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
+                    <div class="contactus">
+                        <span>Lets Connect with us for More Information</span>
+                        <button onclick="">Contact Us</button>
                     </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumbnail">
-                        <img src="images/Packages/Kyoto, Japan.jpg" alt="Package 1">
-                    </div>
-                    <div class="desc">
-                        <span id="carddesc">Lorem ipsum is a placeholder text commonly used in publishing and graphic design to demonstrate the visual form of a document or a typeface without relying on meaningful content</span>
-                    </div>
-                    <div class="btns">
-                        <button id="Buy">Buy Now</button>
-                    </div>
-                </div>
                 </div>
                 
+                <div class="rightContent">
+                    <img src="images/Services/raychan-mnypcmLnXE0-unsplash.jpg">
+                </div>
+            </div>
+            <div class="aboutUs">
+                <div class="head">
+                    <h2>About Us</h2>
+                </div>
+                <div class="para">
+                    <p>
+                        Welcome to Skyluxe Airline's Ticket Reservation System! We're here to make booking your flights simple and stress-free. Enjoy seamless travel planning with us!
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="holders">
+                        <img src="images/AboutUS/airline.png" alt="Our Business">
+                        <label>Our Business</label>
+                    </div>
+
+                    <div class="holders">
+                        <img src="images/AboutUS/Planet.png" alt="Our Planet">
+                        <label>Our Planet</label>
+                    </div>
+
+                    <div class="holders">
+                        
+                        <img src="images/AboutUS/People.png" alt="Our People">
+                        <label>Our People</label>
+                    </div>
+
+                    <div class="holders">
+                        <img src="images/AboutUS/Community.png" alt="Our Community">
+                        <label>Our Community</label>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        
         <div class="pacakgeView" id="pacakgeView">
             <div class="popuphead">
                 <div class="packageName">
@@ -280,7 +302,7 @@
                 <button id="Buy" disabled>Buy Now</button>
             </div>
         </div>
-
+        
         <?php include "./config/footer.php" ?>
         <script src="js/slideshow.js"></script>
         <script src="js/popupWindow.js"></script>
