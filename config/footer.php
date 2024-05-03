@@ -54,12 +54,12 @@
             <p>From App Store or Google play</p>
             <div class="row">
 
-                <img src="../images/app.jpg" alt="">
-                <img src="../images/play.jpg" alt="">
+                <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/app.jpg" alt="">
+                <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/play.jpg" alt="">
 
             </div>
             <p id="footerTopics">Secured Payment Gateways </p>
-            <img src="../images/pay.png" alt="">
+            <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/pay.png" alt="">
 
             <div class="subscribeMail">
                             <form method="post" action="">
