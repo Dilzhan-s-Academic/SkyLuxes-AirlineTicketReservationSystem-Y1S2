@@ -45,9 +45,19 @@
                     <div class="form-elements">
                         <select name="DepartureAirport" id="DepartureAirport">
                             <option disabled selected value> From </option>
-                            <option value="abc">abc</option>
-                            <option value="ddd">ddd</option>
-                            <option value="333">333</option>
+                            <?php
+                                include("config/dbConn.php");
+                                $sql = "SELECT Airport_ID,Name FROM airport ORDER BY Name;";
+                                $result = mysqli_query($conn,$sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    while ($row = $result->fetch_assoc()) {
+                                        echo "<option value=\"".$row['Airport_ID']."\">".$row['Name']."</option>";
+                                    }
+                                }else {
+                                    echo "<option value=\"".$row['Name']."\" disabled selected value>".$row['Name']."</option>";
+                                }
+                            ?>
                         </select>
                         <input type="date" id="departureDate" data-placeholder="Departure Date">
                         <input type="date" id="returnDate" data-placeholder="Return date">
@@ -55,9 +65,19 @@
                     <div class="form-elements">
                         <select name="DestinationAirport" id="DestinationAirport">
                             <option disabled selected value> To </option>
-                            <option value="abc">abc</option>
-                            <option value="ddd">ddd</option>
-                            <option value="333">333</option>
+                            <?php
+                                include("config/dbConn.php");
+                                $sql = "SELECT Airport_ID,Name FROM airport ORDER BY Name;";
+                                $result = mysqli_query($conn,$sql);
+                                
+                                if ($result->num_rows > 0) {
+                                    while ($row = $result->fetch_assoc()) {
+                                        echo "<option value=\"".$row['Airport_ID']."\">".$row['Name']."</option>";
+                                    }
+                                }else {
+                                    echo "<option value=\"".$row['Name']."\" disabled selected value>".$row['Name']."</option>";
+                                }
+                            ?>
                         </select>
                         <select name="SheetCount" id="SheetCount">
                             <option disabled selected value> Seat Count </option>
@@ -92,7 +112,7 @@
         </div>
         <div class="body-content">
             <div class="contactus">
-                <div class="support" onclick="Pages/contactUs.php">
+                <div class="support" onclick="">
                     <img src="images/icons/help.png">
                     <div class="conContent">
                         <span>We are currently open and ready to assist you.</span>
@@ -201,7 +221,7 @@
                     </div>
                     <div class="contactus">
                         <span>Lets Connect with us for More Information</span>
-                        <button>Contact Us</button>
+                        <button onclick="">Contact Us</button>
                     </div>
                 </div>
                 

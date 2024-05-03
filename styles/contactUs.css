@@ -1,9 +1,123 @@
 /* N H D Dilhara IT23349438 */
 
-*{
-	margin: 0;
-	border: 0;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
+h3 {
+    font-size: 44px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h4 {
+    font-size: 34px;
+    margin-top: 40px;
+}
+
+hr {
+    margin: 40px auto 10px auto;
+    border: 1px solid rgba(0, 0, 0, 0.216);
+    width: 80%;
+}
+.content-data {
+    max-width: calc(100% - 320px);
+}
+.header {
+    text-align: center;
+}
+
+
+.header span {
+    font-weight: 500;
+    opacity: 0.8;
+}
+.contact-otherOptions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content {
+    margin: 30px 10px;
+    max-width: 100%;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.content img {
+    width: 150px;
+}
+
+.content p{
+    font-size: medium;
+}
+.content p span {
+    font-weight: 600;
+    text-align: left;
+}
+.content button {
+    margin-top: 20px;
+    background-color: burlywood;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: transform 0.1 ease;
+}
+
+.content button:hover {
+    transform: scale(1.1);
+    background-color: rgba(228, 183, 125, 0.808);   
+}
+.content button:active {
+    transform: scale(0.9);
+    background-color: rgb(234, 180, 110);   
+}
+
+.contactUs-form {
+    background-color: #F8F8FF;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.216);
+}
+.contactUs-form h4 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.contactUs-form label , .contactUs-form input , .contactUs-form textarea {
+    display: flex;
+}
+
+.contactUs-form input , .contactUs-form textarea {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.contactUs-form textarea {
+    height: 200px;
+    padding-top: 10px;
+}
+.contactUs-form .submitbtn {
+    display: flex;
+    justify-content: flex-end;
+}
+.contactUs-form .submitbtn input[type=submit] {
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #F8F8FF;
+    font-weight: 500;
+    width: fit-content;
+    font-size: large;
+    align-items: flex-end;
+    transition: transform 0.2s ease;
+}
+
+.contactUs-form .submitbtn input[type=submit]:hover {
+    background-color: rgba(0, 0, 255, 0.759);
+}
+
+.contactUs-form .submitbtn input[type=submit]:active {
+    background-color: rgba(0, 0, 255, 0.844);
+    transform: scale(0.9);
 }
 

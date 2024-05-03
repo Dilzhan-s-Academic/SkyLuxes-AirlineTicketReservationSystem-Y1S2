@@ -1,5 +1,6 @@
 <!--Dilshan Yapa S Y C T it23366572-->
-<!-- <?php session_start(); ?> -->
+
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,8 +32,25 @@
                     </li>
                 </ul> 
             </nav>
-            <a href="../Pages/signIn.php"><button>Sign in</button></a>
-            <a href="../Pages/signup.php"><button id="signupbtn">Sign up</button></a>
+
+                <?php 
+                    if (!isset($_SESSION["username"])) {
+                        echo "<a href=\"http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/signIn.php\">
+                                    <button>Sign in</button>
+                                </a>
+                        <a href=\"http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/signup.php\">
+                                    <button id=\"signupbtn\">Sign up</button>
+                                </a>";
+                    }elseif ($_SESSION["is_admin"] == 0) {
+                        echo "<a href=\"http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/userDashboard.php\" id='userbtn'>
+                            <img src='http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/Icons/userbtn.png' id='userbtnimg' title='".$_SESSION["fname"]."'>
+                        </a>";
+                    }elseif ($_SESSION["is_admin"] == 1) {
+                        echo "<a href=\"http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/adminDashboard.php\" id='adminbtn'> 
+                            <img src='http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/Icons/admin.png' id='userbtnimg' title='Admin : ".$_SESSION["fname"]."'>
+                            </a>";
+                    }
+                ?>
         </header>
     </body>
 </html>
