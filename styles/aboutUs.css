@@ -1,0 +1,32 @@
+.content-data {
+    max-width: calc(100% - 320px);
+}
+.header {
+    text-align: center;
+}
+.content-data .header span {
+    font-weight: 500;
+    opacity: 0.8;
+}
+.content {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.content h2, .content li {
+    margin: 15px 50px 15px 50px;
+}
+
+
+h2 {
+    color: #666;
+    text-align: left;
+    font-size: 16px;
+}
+.content ul {
+    margin-left: 50px;
+}
+.content ul li {
+    margin-bottom: 10px;
+}

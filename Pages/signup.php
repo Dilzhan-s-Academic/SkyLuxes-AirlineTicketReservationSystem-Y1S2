@@ -1,72 +1,84 @@
+<!--Dilshan Yapa S Y C T it23366572-->
+
+<?php 
+    include "../config/header.php";
+    if(isset($_SESSION['username']))
+    {   
+        if($_SESSION['is_admin'] == 0)
+        {
+            header('Location: ../Pages/userDashboard.php');
+        } elseif($_SESSION['is_admin']== 1){
+            header('Location: ../Pages/adminDashboard.php');
+        }
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sign Up</title>
-    <link rel = "stylesheet" type = "text/css" href = "../styles/signup.css">
+    <link rel = "stylesheet" type = "text/css" href = "../styles/signOperations.css">
+    <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
+    <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
+    <title>Sky Luxe | Sign Up</title>
     
 </head>
-<body> 
-
-    <?php include "../config/header.php" ?>
-    <h1 class="abcd">Join SkyLuxe Airline</h1></h1>
-
-<div class="terms-box">
-    <div class="terms-text"> 
-        <div class="form">
-        <h2 class="wer">Sign Up</h2>
-        <form action = "submitRegistration.php" method = "POST" onsubmit = "return checkPassword()">
-     
-            First Name: <br/>
-            <input type = "text" name = "firstName" placeholder = "First Name" required><br/><br/>
-            
-            Last Name: <br/>
-            <input type = "text" name = "lastName" placeholder = "Last Name" required><br/><br/>
-            
-            Gender:<br/>
-            <input type = "radio" value = "Male" name = "gender">Male
-            <input type = "radio" value = "Female" name = "gender" checked>Female<br/><br/>
-            
-            Mobile Number:<br/>
-            <input type = "phone" name = "mobile" placeholder = "0777777777" pattern = "[0-9]{10}" required><br/><br/>
-            
-            e-mail:<br/>
-            <input type = "email" name = "email" placeholder = "abc@gmail.com" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required><br/><br/>
-            
-            Address:<br/>
-            <textarea name = "address" rows = "8" cols = "50" required></textarea><br/><br/>
-            
-            Birthday:<br/>
-            <input type = "date" name = "day" required><br/><br/>
-            
-            Password:<br/>
-            <input type = "password" id = "pwd" pattern = "(?=.+\d)(?=.+[a-z])(?=.+[A-Z]).{5,10}" required><br/><br/>
-            
-            Re-Enter Password:<br/>
-            <input type = "password" id = "cnfrmpwd" required><br/><br/>
-            
-            <br>
-            <input type = "checkbox" class = "inputStyle" id = "checkbox" onclick = "enableButton()">Accept Privancy Policy and Terms<br/><br/>
-            
-            <h4>I agree to the <span>Tearms of Services</span> and I read the Privacy Policy notice </h4>
-    <div class="buttons">
-        <button class="red_button">Sign In</button>
-    </div>
-            <!--<center>
-            <input type = "submit" value = "submit" id = "submitBtn" disabled>
-            </center>-->
-        </form>
+<body>
+    <div class="body-content">
+        <div class="image">
+            <img src="../images/others/signUp.png" alt="signUp image">
         </div>
-       </div>
-    
-    
-    
+        <div class="form">
+            <h2>Sign Up</h2>
+            <form method="post" action="../Process/signUp-Process.php">
+                <label>First Name : </label>
+                    <input type="text" id="fname" name="fname" placeholder="First Name" pattern="[A-Z][a-z]+" required>
+                <label>Last Name :</label>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" pattern="[A-Z][a-z]+" required>
+                <label>Address :</label>
+                    <input  type="text" id="address" name="address" placeholder="Address" required>
+                <label>Mobile No :</label>
+                    <input type="phone" id="mobile" name="mobile" placeholder="Mobile Number" pattern="[\+][0-9]{10,}" required>
+                <label>E-mail :</label>
+                    <input type="email" id="mail" name="mail" placeholder="E-mail" required>
 
-</div>
-<?php include "../config/footer.php" ?>
+                <label>Username : </label>
+                    <input type="text" id="username" name="username" placeholder="Username" pattern="[A-Z a-z 0-9]{4,8}" required>
+                <label>New Password :</label>
+                    <input type="password" id="newpwd" name="newpwd" placeholder="New Password" oninput="checkPwd()" pattern="[a-z A-Z 0-9 \. @ % #]{8,}{8,}" required>
+                <label>Confirm Password :</label>
+                    <input  type="password" id="cnfmpwd" name="cnfmpwd" placeholder="Confirm Password" oninput="checkPwd()" pattern="[a-z A-Z 0-9 \. @ % #]{8,}" required>
+                    <span id="pwdStat"></span>
+                    <span id="err"><?php if(isset($_GET['err'])){ echo "<br/>"."&#9888; ".$_GET['err'];} ?></span>
 
-
+                <div class="submitButton">
+                    <a href="signIn.php">Do you already have an Account ? </a>
+                    <input type="submit" value="Sign Up" name="SignUp">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function checkPwd(){
+                        var pwd = document.getElementById('newpwd').value;
+                        var cnfmpwd = document.getElementById('cnfmpwd').value;
+                        var msg = document.getElementById('pwdStat');
+                        var submitbtn = document.getElementById('submitBtn');
+                        
+                        if(cnfmpwd == '' ) {
+                            msg.innerHTML = "";
+                            msg.style.color = "";
+                            submitbtn.disabled = true;
+                        }else if(pwd != cnfmpwd){
+                            msg.innerHTML = "Password Doesn't Matched!!";
+                            msg.style.color = "red";
+                            submitbtn.disabled = true;
+                        }else {
+                            msg.innerHTML = "Password Matched!!";
+                            msg.style.color = "green";
+                            submitbtn.disabled = false;
+                        }
+            }
+    </script>
+    <?php include "../config/footer.php" ?>
 </body>
 </html>

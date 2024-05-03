@@ -10,6 +10,6 @@
     $conn = new mysqli($database_host,$database_useraccount,$database_password,$database_name);
 
     if($conn->connect_error){
-        include "databaseConnectionError.php";
+        header("Location : databaseConnectionError.php") ;
     }
 ?>

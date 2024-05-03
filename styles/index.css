@@ -1,6 +1,6 @@
 /* Dilshan Yapa S Y C T it23366572 */
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
 
-* {box-sizing: border-box;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -57,47 +57,55 @@ img {vertical-align: middle;}
 
 .SearchFlightsForm {
   position: relative;
-  bottom: 90px;
-  max-width: 700px;
+  bottom: 130px;
+  max-width: calc(100% - 500px);
   width: 100%;
   border-radius: 6px;
   padding: 10px 30px 10px 30px;
-  margin: 0px 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto 0px auto;
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  background-image: linear-gradient(to right bottom, rgba(248,248,255,0),rgba(248,248,255,0), rgba(4, 4, 172, 0.136));
 }
 .form-elements{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 0px 20px 0px;
+  margin: 25px 5px 25px 5px;
 }
-.SearchFlightsForm > span {
+.SearchFlightsForm span {
   display: flex;
   justify-content: center;
   font-weight: 700;
   font-size: large;
 }
 
-.form-elements > input,select {
+.form-elements  input, .form-elements select {
   outline: none;
   font-size: 14px;
   font-weight: 400;
   color: #333;
   border-radius: 5px;
   border: 1px solid #aaa;
-  height: 42px;
+  height: 60px;
   width:calc(100% / 3 - 15px);
   cursor: pointer;
 }
 
-.form-elements > input:is(:focus, :valid),select:is(:focus, :valid) {
+.form-elements  input[type=date] {
+  padding-left: 10px;
+}
+
+.form-elements  input[type=date]::before {
+  content:  attr(data-placeholder);
+  color: #999;
+  pointer-events: none;
+}
+.form-elements input:is(:focus, :valid),select:is(:focus, :valid) {
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
-.form-elements > input:hover,select:hover {
+.form-elements input:hover,select:hover {
   box-shadow: 0 3px 6px rgba(0,0,0,0.13);
 }
 
@@ -114,7 +122,7 @@ img {vertical-align: middle;}
   cursor: pointer;
 }
 
-.form-submittion > #Search {
+.form-submittion #Search {
   border: 1px solid #aaa; 
   border-radius: 10px;
   background-color:rgba(4, 4, 172, 0.8);
@@ -124,81 +132,274 @@ img {vertical-align: middle;}
   cursor: pointer;
 }
 
-.form-submittion > #Search:hover {
+.form-submittion #Search:hover {
   background-color: rgba(4, 4, 172, 0.9);
 }
 .form-submittion > #Search:active {
   background-color: rgba(4, 4, 172, 1);
 }
 
+.contactus {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.support {
+  display: flex;
+  margin-top: -90px;
+  align-items: center;
+  background-color: #F8F8FF;
+  color: #3632a0e1;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3);
+  font-size: larger;
+  width:calc(100% / 3 - 100px);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+.conContent span {
+  display: inline-block;
+}
+
+.conContent #tel {
+  display: inline-block;
+  color: #0000007c;
+  font-size: 15px;
+}
+
+.support:hover {
+  box-shadow: 0px 5px 10px 0px rgba(73, 47, 47, 0.5);
+}
+
+.support img {
+  width: 100px;
+}
+
 .card {
   position: relative;
 	border: none;
+  margin: 10px 10px 10px 10px;
   cursor: pointer;
 	border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-	background-color: rgb(255, 255, 255);
-	max-width: 250px;
+	max-width: calc(100% - 100px);
+  width: 100%;
 	height: 360px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  background-size: cover;
+  background-position: center;
 }
 
-.card > .thumbnail > img {
-  max-width: 230px;
-  margin: 5px 0px 5px 0px;
-  border-radius: 5px;
-}
-
-.desc {
-  display: block;
-}
-
-.desc span {
+.package {
   display: flex;
-  justify-content: center;
-  opacity: 0.8;
-}
-
-.desc h3 {
-  font-size: 30px;
-  margin-top: 30px;
-  color: #0c0a42;
-  justify-content: center;
-}
-
-
-.card > .btns > button {
-  position: absolute;
-  bottom: 0;
-  justify-content: center;
-  border: 1px solid #aaa;
+  flex-direction: column;
+  height: 100%;
   border-radius: 10px;
-  width: 90%;
-  color:#f2f2f2;
+  transition: all 0.3s ease;
+  background-image:linear-gradient(to bottom, rgba(248,248,255,0), rgba(0, 0, 0, 0.9));
+  opacity: 0;
+}
+
+.packDetails {
+  margin-top: auto;
+  padding: 20px;
+}
+.packDetails span{
+  display: inline-block;
+}
+.packDetails #name {
+  font-size: 50px;
+  color:#FFF;
+  font-family: "Crete Round", serif;
   font-weight: 500;
-  background-color:rgba(4, 4, 172, 0.8);
-  margin: 30px 0px 10px 0px;
-  padding: 10px 10px 10px 10px;
-  cursor: pointer;
-}
+  border-radius: 10px;
+} 
 
-.card > .btns > button:hover {
-  background-color:rgba(4, 4, 172, 0.9);
+.packDetails #desc {
+  margin-top: 8px;
+  color: #fff;
+  opacity: 0.7;
+  text-indent: 15px;
 }
-
-.card > .btns > button:active {
-  background-color:rgba(4, 4, 172, 1);
+.package:hover {
+  opacity: 1;
 }
 
 .cardRow{
+  margin: 10px 0px 10px 0px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.Services{
-  margin:100px 0px 100px 0px;
+.Services {
+  display: flex;
+  justify-content: space-between;
+  background-image:linear-gradient(rgba(94, 59, 200, 0.5), rgba(112, 27, 27, 0.5)), url('../images/Services/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  margin: 100px -5% 100px -5%;
+  padding: 10px 50px 10px 50px;
+}
+
+.Services .leftContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.Services .leftContent .heading h3{
+  color: #fff;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.3) ;
+  text-align: left;
+  font-size: 72px;
+  margin-bottom: 10px;
+}
+
+.Services .leftContent .heading span{
+  color: #fff;
+  text-align: left;
+  font-weight: 500;
+  opacity: 0.5;
+  text-indent: 20px;
+}
+.Services .rightEmptyContent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.custSatist {
+  display: flex;
+  background-color: #F8F8FF;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.custSatist .leftContent {
+  max-width: 50%;
+  display: block;
+}
+
+.custSatist .leftContent h3{
+  text-align: left;
+  font-size: 72px;
+  margin-bottom: 5px;
+}
+
+.custSatist .leftContent > span{
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.custSatist .leftContent .count {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.custSatist .leftContent .count .happyCustCount ,.custSatist .leftContent .count .ClientSatist {
+  display: flex;
+  background-color: #ECECF2 !important;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 5px;
+  height: 100px;
+  align-items: center;
+  padding: 5px 20px;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04), 6px 3px 14px 0px rgba(0, 0, 0, 0.04), 23px 12px 26px 0px rgba(0, 0, 0, 0.03), 53px 27px 35px 0px rgba(0, 0, 0, 0.02), 94px 48px 42px 0px rgba(0, 0, 0, 0.01);
+}
+
+.custSatist .leftContent .count .happyCustCount .content span, .custSatist .leftContent .count .ClientSatist .content span {
+  display: block;
+  margin-right: 20px;
+  text-align: center;
+}
+#countCal {
+  color: blueviolet;
+  font-size: 32px;
+}
+
+#countTitle {
+  color: #000;
+  font-size: large;
+  font-weight: 500;
+}
+.custSatist .contactus{
+  align-items: center;
+}
+.custSatist .contactus span {
+  font-weight: 300;
+  font-size: large;
+  text-align: left;
+}
+
+.custSatist .contactus button {
+  background-color: rgba(39, 39, 193, 0.8);
+  cursor: pointer;
+  padding: 20px 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 900;
+}
+.custSatist .contactus button:hover {
+  background-color:  rgba(39, 39, 193, 0.9);
+}
+.custSatist .contactus button:active {
+  background-color:  rgba(39, 39, 193, 1);
+}
+
+.custSatist .rightContent {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.custSatist .rightContent img {
+  width: 500px;
+  border-radius: 20px;
+}
+
+.aboutUs {
+  display: block;
+  text-align: center;
+
+}
+
+.aboutUs .head {
+  margin-top: 60px;
+}
+
+.aboutUs .para {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.aboutUs .content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.aboutUs .content .holders {
+  display: inline-block;
+  cursor: pointer;
+}
+.aboutUs .content .holders img {
+  display: block;
+  border-radius: 100%;
+  height: 150px;
+  margin: 20px 40px;
+  transition: transform 0.3s ease;
+}
+
+.aboutUs .content .holders:hover img ,
+.aboutUs .content .holders:hover label {
+  color:#19194a;
+  transform: scale(1.1); /* Zoom effect */
+}
+.aboutUs .content .holders label {
+  font-weight: 500;
 }
 .pacakgeView {
   position: fixed;
@@ -206,23 +407,13 @@ img {vertical-align: middle;}
   top: 50%;
   left: 50%;
   width: 50%;
+  border-radius: 20px;
   transform: translate(-50%,-50%);
   background-color: #fff;
   box-shadow: 5px 10px 10px  rgba(83, 83, 172, 0.5);
   padding: 10px 50px 20px;
   visibility: hidden;
-
-}
-
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 4;
 }
 
 .pkgDesc{
@@ -278,6 +469,7 @@ img {vertical-align: middle;}
   justify-content: space-between;
 }
 .popupClose img {
-  max-height: 25px;
+  max-height: 30px;
+  margin-right: -40px;
   cursor: pointer;
 }

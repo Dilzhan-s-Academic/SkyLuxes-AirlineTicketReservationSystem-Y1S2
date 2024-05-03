@@ -3,6 +3,8 @@
 <html>
     <head>
         <title>Database Connection Error</title>
+        <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
+        <title>Sky Luxe | Database Connection Error</title>
     </head>
     <style>
         body {

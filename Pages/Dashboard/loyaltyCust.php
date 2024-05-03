@@ -1,4 +1,5 @@
 <!--Dilshan Yapa S Y C T it23366572-->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -47,7 +48,7 @@
         </style>
     </head>
         <body>
-            <h1 class="headding"> Profile Information</h1>
+            <h1 class="headding">Loyalty Customer</h1>
             <div class="msg">
                 <span>&#9888; Dear customers, we're currently working on implementing the Loyalty Customer Feature, thank you for your patience.</span>
             </div>
