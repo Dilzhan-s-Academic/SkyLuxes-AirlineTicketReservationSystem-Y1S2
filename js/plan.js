@@ -48,14 +48,16 @@ const infiniteScroll = () => {
 
     // Clear existing timeout & start autoplay if the mouse is not hovering over the carousel
     clearTimeout(timeoutId);
-    if(!vas.matches(":hover")) autoPlay();
+    if(!vas.matches(":hover")) {
+      autoPlay()
+    };
 }
 
 // Function to autoplay the carousel
 const autoPlay = () => {
     if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-    // Autoplay the carousel after every 2500 ms
-    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+    // Autoplay the carousel after every 1000 ms
+    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 1000);
 }
 
 autoPlay();

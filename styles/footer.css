@@ -1,61 +1,111 @@
-/* Dilshan Yapa S Y C T it23366572 */
 
 footer{
-    background-color: #24252A;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: white;
     margin-top: auto;
     justify-content: center;
 }
-.footerContainer .rights span {
+
+footer .footerT{
     display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #aaaaaad1;
-    font-weight: 400;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin:0 0 8px 0;
+    color: #ffffff;
+    
+}
+#footerTopics, .subscribeMail , .subscribeMail form span {
+    font-size: 16px;
+    margin:0 0 8px 0;
+    color: #ffffff;
+    font-weight: 700;
+
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #ffffff;
     margin-bottom: 10px;
 }
-.footerContainer .FooterLogo {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+
+footer.follow{
+    margin-top: 20px;
+
 }
 
-.FooterLogo {
-    height: 160px;
-    align-items: center;
+footer .follow i{
+    color:#ffffff;
+    padding-right:4px;
+    cursor:pointer;
 }
 
-.FooterLogo img {
-	cursor: pointer;
-}
-.footerContainer .FooterNav {
-    margin: 10px 0px 10px 0px;
+footer .install .row img{
+    border:1px solid #ffffff;
+    border-radius: 6px;
+
 }
 
-.FooterNav a {
-    color: #f2f2f2;
-    text-decoration: none;
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color:#ebeb00;
+
+}
+
+.section-p1 {
+    padding: 40px 80px;
+  }
+
+#logo{
+    height: 100px;
+}
+.subscribeMail{
+display: flex;
+flex-direction: column;
+width: 100%;
 }
 
 .subscribeMail , .subscribeMail form span {
     display: flex;
-    justify-content: center;
-    color:#ac9f9fc2;
+    color:rgb(255, 255, 255)
 }
 
 .subscribeMail form input {
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin: 10px 5px;
+    height: 3.125rem;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
 }
 .subscribeMail form input[type=submit] {
-    cursor: pointer;
-    background-color: rgb(26, 84, 26, 0.9);
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 255, 225, 0.9);
 }
 .subscribeMail form input[type=submit]:hover {
-    background-color: rgb(26, 84, 26, 0.8);
+    background-color: rgb(0, 254, 207);
 }
 .subscribeMail form input[type=submit]:active {
-    background-color: rgb(26, 84, 26, 1);
+    background-color: rgb(0, 0, 0);
 }
