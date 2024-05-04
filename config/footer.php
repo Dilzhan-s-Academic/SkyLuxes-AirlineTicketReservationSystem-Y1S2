@@ -1,37 +1,80 @@
-<!--G.M.M.Dissanayake It23360846-->
 
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/styles/footer.css">
-    </head>
-    <body>
-        <footer>
-            <div class="footerContainer">
-                <div class="FooterNav">
-                    <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/index.php">Home</a> |
-                    <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/generalNotice.php">General Notices</a> |
-                    <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/privacypolicy.php">Privacy & Policies</a> |
-                    <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/termsCondition.php">Terms & Conditions</a> |
-                    <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/legalNotice.php"">Legal Notices</a> |
-                    <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/AboutUs.php">About Us</a> |
-                    <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/contactUs.php">Contact Us</a>
-                </div>
-                <div class="FooterLogo">
-                    <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/logo.png" alt="SkyLuxe Logo" class="FooterLogo">
-                    <div class="subscribeMail">
-                        <form method="post" action="">
-                            <span>SUBSCRIBE TO OUR SPECIAL OFFERS</span>
-                            <input type="text" name="submail" placeholder="Enter Your Email Address">
-                            <input type="submit" name="submit">
-                    </div>
-                </div>
-                
-                <div class="rights">
-                    <span>2024 © MLB_09.01_01 </span>
+<!--G.M.M.Dissanayake It23360846-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/styles/footer.css">
+
+</head>
+<body>
+<footer class="section-p1">
+        <div class="footerT">
+            <img src='http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/logo.png' alt="logo" id="logo">
+            <p id="footerTopics">Contact</p>
+            <p><strong>Contact: </strong>07712234432 / 076544321</p>
+            <p>24hr Service</p>
+            <div class="follow">
+                <br>
+                <p id="footerTopics">Follow Us</p>
+                <div class="icon">
+
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
 
+        <div class="footerT">
+
+            <p id="footerTopics">About</p>
+            <a href="#">About us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+        <div class="footerT">
+
+            <p id="footerTopics">My Account</p>
+            <a href="#">My Account</a>
+            <a href="#">Sign in</a>
+            <a href="#">Help</a>
+
+        </div>
+
+        <div class="footerT install">
+
+            <p id="footerTopics">Install App</p>
+            <p>From App Store or Google play</p>
+            <div class="row">
+
+                <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/app.jpg" alt="">
+                <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/play.jpg" alt="">
+
+            </div>
+            <p id="footerTopics">Secured Payment Gateways </p>
+            <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/pay.png" alt="">
+
+            <div class="subscribeMail">
+                            <form method="post" action="">
+                            <span>SUBSCRIBE TO OUR SPECIAL OFFERS<br></span>
+                            <input type="text" name="submail" placeholder="Email Address">
+                            <input type="submit" name="submit">
+            </div>   
+
+            
+        </div>
+
+
+    </footer>
+    
+</body>
 </html>
-

@@ -200,7 +200,8 @@ p {
   padding: 0 35px;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  padding-bottom: 50px;
+ 
   
 }
 
@@ -407,3 +408,263 @@ p {
   background-color:rgba(0, 255, 213, 0.8);
   border: 1px solid #01f7e2; 
 }
+
+/* discounts */
+
+.discounts {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 40px; /* Gap between cards */
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+ 
+ 
+  
+}
+
+.offer {
+  flex: 0 0 auto; /* Do not grow, shrink, or basis */
+}
+
+
+
+.card img {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px; /* Match card's border-radius */
+  display: block;
+}
+
+.card {
+  position: relative; /* Required for absolute positioning of ::after */
+  width: 275px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.content{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+  padding: 20px;
+ 
+}
+.content:hover{
+  opacity: 1;
+}
+.content h1{
+  font-size: 35px;
+  color: #ff6600;
+  padding: 10px;
+  background-color: #fffafa;
+  margin: 0; 
+  margin-bottom: 30px;
+  border-radius:9999px;
+ 
+}
+
+.content h2{
+  font-size: 25px;
+  color: #ffffff;
+  margin: 0; 
+  padding-bottom: 50px;
+  
+}
+
+.content p{
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0; 
+  
+}
+.content #location{
+ font-weight: 700;
+  font-size: 25px;
+}
+.content #includess{
+  margin-top: 10px;
+   font-size: 15px;
+   font-weight: 600;
+}
+
+.letsGo {
+  background-color: #ff7700;
+  border: 2px solid #ff7700;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+  padding: 10px 20px;
+  position: relative;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+ 
+}
+
+.letsGo:hover,
+.letsGo:focus {
+  background-color: #ff9933;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 8px;
+}
+
+.letsGo:hover {
+  transform: translateY(-3px);
+}
+
+.letsGo:active {
+  background-color: #e65c00;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 1px 2px;
+  transform: translateY(0);
+}
+
+/*--------------banners----------------*/
+
+.bannerJ{
+  margin: 40px;
+
+
+}
+
+#hbanner1{
+  background-image: url('../images/planSlider/banner2j.jpg');
+  height: 70vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.bannerContent {
+  background-color: rgba(0, 0, 0, 0.6); /* Background color with opacity */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding for inner content */
+  color: white; /* Text color */
+  
+}
+
+.bannerContent h4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-start;
+  margin-top: 0; /* Remove default margin */
+  color: white;
+}
+
+.bannerContent p {
+  margin-bottom: 15px; /* Add some space below the paragraph */
+  color: white;
+}
+
+.bannerContent button {
+  background-color: transparent; /* Button background color */
+  color: white; /* Button text color */
+  border: 1px solid white; /* Remove button border */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 35px; /* Button border-radius */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 16px; /* Button font size */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.bannerContent button:hover {
+  background-color: white; /* Darker color on hover */
+  color: black;
+}
+
+/* banner cards */
+
+#bannersJS{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 4 columns */
+  gap: 22px; /* gap between grid items */
+  padding: 40px 80px;
+ 
+}
+#bannersJS .bannerBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  align-items: flex-start;
+  background-image: url('../images/planSlider/planTrip.jpg');
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+
+}
+#bannersJS .bannerBox2{
+  background-image: url('../images/planSlider/manPlane.jpg');
+}
+
+
+
+#banner3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columns */
+  gap: 22px; /* gap between grid items */
+  padding: 40px 80px;
+}
+
+#banner3 .bannerBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  align-items: flex-start;
+  background-image: url('../images/planSlider/safety.jpg');
+  min-width: 30%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+
+}
+
+#banner3 .bannerBox2{
+  background-image: url('../images/planSlider/destination.jpg');
+
+}
+
+#banner3 .bannerBox3{
+  background-image: url('../images/planSlider/children.jpg');
+
+}
+
+#banner3 h2{
+  color: white;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+#banner3 h3{
+  color: rgb(224, 12, 12);
+  font-weight: 800;
+  font-size: 15px;
+}
+
+
+
+
+
+
