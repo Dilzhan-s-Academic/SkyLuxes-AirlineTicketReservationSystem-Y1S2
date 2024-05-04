@@ -59,6 +59,11 @@
         </style>
     </head>
         <body>
+            <?php
+                include("../../config/dbConn.php");
+
+                
+            ?>
             <h1 class="headding"> Profile Information</h1>
             <div class="userDetailContainer">
                 <h2>User Details</h2>

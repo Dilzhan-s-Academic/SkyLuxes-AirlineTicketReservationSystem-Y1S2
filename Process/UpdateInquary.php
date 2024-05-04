@@ -2,7 +2,10 @@
 
 <?php
     include("../config/dbConn.php");
-
+    session_start();
+    
+    $username = $_SESSION['username'];
+    $username = preg_replace("/[^a-zA-Z0-9]/", "", $username);
     $sql = "UPDATE inquary 
             SET Name = '" . $_POST['Name'] . "',
             Email = '" . $_POST['Email'] . "',
