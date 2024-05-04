@@ -11,7 +11,7 @@
 </head>
 <body>
 <footer class="section-p1">
-        <div class="col">
+        <div class="footerT">
             <img src='http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/logo.png' alt="logo" id="logo">
             <p id="footerTopics">Contact</p>
             <p><strong>Contact: </strong>07712234432 / 076544321</p>
