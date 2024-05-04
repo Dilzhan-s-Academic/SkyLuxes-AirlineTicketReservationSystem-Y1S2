@@ -4,14 +4,23 @@
 <html lang="en">
 
     <head>
-        
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/generalStatic.css"><link rel="stylesheet" type="text/css" href="../styles/contactUs.css">
         <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
         <title>Sky Luxe | Contact Us</title>
     </head>
     <body>
-        <?php include "../config/header.php" ?>
+
+    <?php 
+        if(isset($_GET['edit']) && $_GET['edit']=="clicked"){
+            $cID = $_GET['Iid']; 
+            $cName = $_GET['IName']; 
+            $cEmail = $_GET['IEmail']; 
+            $cSubject = $_GET['Isubject']; 
+            $cMsg = $_GET['Imsg']; 
+        }
+        include "../config/header.php" 
+    ?>
 
         <div class="bannerContainer">
             <img src="..\images\banners\contactUsBanner.png" alt="SkyLuxe Banner">
@@ -56,20 +65,46 @@
                 </div>
                 <div class="contactUs-form">
                     <h4>Contact Us</h4>
-                    <form action="" method="POST">
-                        <label for="Name">Your Name:</label>
-                            <input type="text" name="Name" id="Name" placeholder="Your Name">
-                        <label for="Name">Your Email:</label>
-                            <input type="email" name="Email" id="Email" placeholder="Your Email Address">
-                        <label for="Name">Your Subject:</label>
-                            <input type="text" name="Subject" id="Subject" placeholder="Your Subject">
-                        <label for="Name">Your Message:</label>
-                            <textarea placeholder="Enter your message here" name="Message" id="Message" > </textarea>
-                        <div class="submitbtn">
-                            <input type="submit" name="Send" value="Send" id="Send">
-                        </div>
-                        
-                    </form>
+
+                    <?php
+                        if(isset($cID)){
+                            echo "
+                            <form action='../Process/UpdateInquary.php' method='POST'>
+                            <label for='ID'>Inquary ID:</label>
+                                    <input type='text' name='ID' id='ID' value='".$cID."' readonly>
+                                <label for='Name'>Your Name:</label>
+                                    <input type='text' name='Name' id='Name' placeholder='Your Name'value='".$cName."'>
+                                <label for='Email'>Your Email:</label>
+                                    <input type='email' name='Email' id='Email' placeholder='Your Email Address' value='".$cEmail."'>
+                                <label for='Subject'>Your Subject:</label>
+                                    <input type='text' name='Subject' id='Subject' placeholder='Your Subject' value='".$cSubject."'>
+                                <label for='Message'>Your Message:</label>
+                                    <textarea placeholder='Enter your message here' name='Message' id='Message' >".$cMsg." </textarea>
+                                <div class='submitbtn'>
+                                    <input type='submit' name='Send' value='Update' id='Send'>
+                                </div>
+                                
+                            </form>
+                            ";
+                        }else{
+                            echo "
+                            <form action='../Process/CreateInquary.php' method='POST'>
+                                <label for='Name'>Your Name:</label>
+                                    <input type='text' name='Name' id='Name' placeholder='Your Name'>
+                                <label for='Email'>Your Email:</label>
+                                    <input type='email' name='Email' id='Email' placeholder='Your Email Address'>
+                                <label for='Subject'>Your Subject:</label>
+                                    <input type='text' name='Subject' id='Subject' placeholder='Your Subject'>
+                                <label for='Message'>Your Message:</label>
+                                    <textarea placeholder='Enter your message here' name='Message' id='Message' > </textarea>
+                                <div class='submitbtn'>
+                                    <input type='submit' name='Send' value='Send' id='Send'>
+                                </div>
+                                
+                            </form>
+                            ";
+                        }
+                    ?>
                 </div>
             </div>
         </div>
