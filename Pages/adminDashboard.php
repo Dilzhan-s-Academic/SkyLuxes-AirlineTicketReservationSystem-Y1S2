@@ -1,21 +1,21 @@
-
-<?php 
-    include "../config/header.php";
-    if(!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !=1)
-    {
-        header('Location: ../Pages/signIn.php');
-    }
-?>
+<!--Dilshan Yapa S Y C T it23366572-->
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/dashboard.css">
-        <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
+        <link rel="icon" type="image/x-icon" href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/Icons/favicon.png">
         <title>Sky Luxe | Admin Dashboard</title>
     </head>
     <body>
+        <?php 
+            include "../config/header.php";
+            if(!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !=1)
+            {
+                header('Location: ../Pages/signIn.php');
+            }
+        ?>
         
         <div class="body-content">
             <div class="userDashboardMenu">
@@ -36,7 +36,7 @@
                         <li> Profile Informations </li>
                         <li> Inquary Management </li>
 
-                        <li style="background-color: rgba(125, 23, 41, 0.81); color:#fff" onclick=" if(window.confirm('Do you want to Delete Your Account?')){document.location = '../Process/signOut-Process.php';}"> Delete Account </li>
+                        <li style="background-color: rgba(125, 23, 41, 0.81); color:#fff" onclick=" if(window.confirm('Do you want to Delete Your Account?')){document.location = '../Process/delAcc-Process.php';}"> Delete Account </li>
 
                         <li style="background-color: #f00;color:#fff" onclick=" if(window.confirm('Do you want to Sign Out?')){document.location = '../Process/signOut-Process.php';}"> Sign Out </li>
                     </ul>

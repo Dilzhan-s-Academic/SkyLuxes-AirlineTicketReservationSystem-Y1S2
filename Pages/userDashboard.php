@@ -1,13 +1,5 @@
 <!--Dilshan Yapa S Y C T it23366572-->
 
-<?php 
-    include "../config/header.php";
-    if(!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !=0)
-    {
-        header('Location: ../Pages/signIn.php');
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,6 +10,17 @@
         <title>Sky Luxe | User Dashboard</title>
     </head>
     <body>
+
+    
+        <?php 
+            include "../config/header.php";
+            if(!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !=0)
+            {
+                header('Location: ../Pages/signIn.php');
+            }
+        ?>
+
+
         <div class="body-content">
             <div class="userDashboardMenu">
                 <div class="user">
@@ -33,6 +36,8 @@
                         <li onclick="loadContent('myresrv');"> My Reservations </li>
                         <li onclick="loadContent('myinfo');"> Profile Information </li>
                         <li onclick="loadContent('loyalty');"> Loyalty Customer </li>
+                        <li onclick="loadContent('inquary');"> My Inquaries </li>
+                        <li style="background-color: rgba(125, 23, 41, 0.81); color:#fff" onclick=" if(window.confirm('Do you want to Delete Your Account?')){document.location = '../Process/delAcc-Process.php';}"> Delete Account </li>
                         <li style="background-color: #f00;color:#fff" onclick="if(window.confirm('Do you want to Sign Out?')){document.location = '../Process/signOut-Process.php';}" id="logout"> Sign Out </li>
                     </ul>
                 </div>
@@ -54,6 +59,9 @@
                         break;
                     case 'loyalty':
                         path = 'Dashboard/loyaltyCust.php';
+                        break;
+                    case 'inquary':
+                        path = 'Dashboard/inquary.php';
                         break;
                 }
                 fetch(path) //-> stream
@@ -85,6 +93,8 @@
                         }
             }
             loadContent('myresrv');
+
+            
         </script>
     </body>
 </html>

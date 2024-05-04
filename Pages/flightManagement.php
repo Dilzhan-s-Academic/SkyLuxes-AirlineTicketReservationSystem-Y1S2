@@ -1,19 +1,11 @@
 <!--Dilshan Yapa S Y C T it23366572-->
 
-<?php 
-    include "../config/header.php";
-    if(!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !=1)
-    {
-        header('Location: ../Pages/signIn.php');
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/dashboard.css">
-        <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
+        <link rel="icon" type="image/x-icon" href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/Icons/favicon.png">
         <title>Sky Luxe | Admin Dashboard</title>
         <style>
             .headding {
@@ -175,6 +167,14 @@
         </style>
     </head>
     <body>
+        <?php 
+            include "../config/header.php";
+            if(!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !=1)
+            {
+                header('Location: ../Pages/signIn.php');
+            }
+        ?>
+
         
         <div class="body-content">
             <div class="userDashboardMenu">
