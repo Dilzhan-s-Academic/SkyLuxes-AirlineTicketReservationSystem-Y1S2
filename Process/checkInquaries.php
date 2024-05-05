@@ -1,13 +1,9 @@
-<!--N H D DILHARA IT23349438-->
+
 
 <?php
-    include("../../config/dbConn.php");
-    session_start();
-    
-    $username = $_SESSION['username'];
-    $username = preg_replace("/[^a-zA-Z0-9]/", "", $username);
+    include("../config/dbConn.php");
 
-    $sql = "SELECT * FROM inquary WHERE Username = '".$username."';";
+    $sql = "SELECT * FROM inquary;";
 
     $result = mysqli_query($conn,$sql);
 
@@ -33,10 +29,7 @@
                         <label for=\"Inqary\">". $row['Message'] ." </label>
                     </td>
                     <td class=\"Controllers\">
-                        <button id=\"editBtn\" onclick=\"if(window.confirm('Do you want to Edit this Inquary?')){
-                            document.location = '../Pages/contactUs.php?edit=clicked&Iid=".$row['InquaryID']."&IName=".$row['Name']."&IEmail=".$row['Email']."&Isubject=".$row['Subject']."&Imsg=".$row['Message']." ';};\"> Edit </button>
-
-                        <button id=\"delBtn\" onclick=\"if(window.confirm('Do you want to Delete this Inquary?')){document.location = '../Process/deleteInquary.php?id=".$row['InquaryID']."';};\">Delete </button>
+                        <button id=\"Replybtn\" onclick=\"if(window.confirm('Do you want to Reply this Inquary?')){openPopup('".$row['InquaryID']."')};\">Reply </button>
                     </td>
                 </tr>";
             $row_index++;

@@ -11,6 +11,6 @@
         header('Location: ../Pages/flightManagement.php');
     }
     else{
-        header('Location: ../Pages/flightManagement.php?deleteErr=\"Something went Wrong!! Cannot Delete this Flight.\"');
+        header('Location: ../Pages/flightManagement.php?err=\"Something went Wrong!! Cannot Delete this Flight.\"');
     }
 ?>

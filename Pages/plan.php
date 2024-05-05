@@ -19,16 +19,17 @@
         <div class= "SearchFlightsForm">
             <span>Reserve Your Seat</span>
             <div class="form-div">
-                <form> 
-                    <div class="form-elements">
-                    <input type="text" name="DepartureAirport" id="DepartureAirport" placeholder="From">
-
-                        <input type="date" id="DayToGo">
-                        <input type="date" id="DayToCome">
+            <div class="form-elements">
+                        <select name="DepartureAirport" id="DepartureAirport">
+                            <?php include "../Process/readAirport.php"?>
+                        </select>
+                        <input type="date" id="departureDate" data-placeholder="Departure Date">
+                        <input type="date" id="returnDate" data-placeholder="Return date">
                     </div>
                     <div class="form-elements">
-                    <input type="text"  name="flightNametinationAirport"  id="flightNametinationAirport" placeholder="To">
-                        
+                        <select name="DestinationAirport" id="DestinationAirport">
+                            <?php include "../Process/readAirport.php"?>
+                        </select>
                         <select name="SeatCount" id="SeatCount">
                             <option disabled selected value> Seat Count </option>
                             <option value="1">1</option>

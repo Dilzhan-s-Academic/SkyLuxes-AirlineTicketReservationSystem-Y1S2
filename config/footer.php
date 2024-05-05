@@ -1,5 +1,5 @@
-
 <!--G.M.M.Dissanayake It23360846-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,10 +34,13 @@
         <div class="footerT">
 
             <p id="footerTopics">About</p>
-            <a href="#">About us</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Contact Us</a>
+            <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/AboutUs.php">About us</a>
+            <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/privacypolicy.php">Privacy Policy</a>
+            <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/termsCondition.php">Terms & Conditions</a>
+            <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/contactUs.php">Contact Us</a>
+            <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/generalNotice.php">General Notices</a>
+            <a href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/Pages/legalNotice.php">Legal Notices</a>
+            <a href="">General Notices</a>
 
         </div>
 
@@ -64,7 +67,7 @@
             <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/pay.png" alt="">
 
             <div class="subscribeMail">
-                            <form method="post" action="">
+                            <form method="post" action="../Process/subscribe.php">
                             <span>SUBSCRIBE TO OUR SPECIAL OFFERS<br></span>
                             <input type="text" name="submail" placeholder="Email Address">
                             <input type="submit" name="submit">

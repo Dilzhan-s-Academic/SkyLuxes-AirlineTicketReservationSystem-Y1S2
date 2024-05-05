@@ -54,7 +54,7 @@
     cursor: pointer;
     font-weight: 600;
     color: black;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(30, 113, 54, 0.2);
 }
 
 .linkList li:hover {
@@ -62,7 +62,7 @@
     box-shadow: 0 5px 10px rgba(197, 101, 101, 0.488);
 }
 
-#content{
+.content {
     max-width: calc(100% - 320px);
     width: 100%;
 }
