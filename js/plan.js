@@ -1,3 +1,7 @@
+/*IT23365346
+BJS PERERA*/
+
+
 // Selecting necessary elements from the DOM
 const vas = document.querySelector(".vas");
 const carousel = document.querySelector(".carousel");
@@ -87,9 +91,3 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// Get current date and time
-var now = new Date();
-var datetime = now.toLocaleString();
-
-// Insert date and time into HTML
-document.getElementById("resultdatetime").innerHTML = datetime;

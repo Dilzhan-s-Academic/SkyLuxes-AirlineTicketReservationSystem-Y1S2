@@ -33,7 +33,7 @@
                         <li> Reservation Management </li>
                         <li onclick="window.location.href = 'flightManagement.php';"> Flight Management </li>
                         <li> User Management </li>
-                        <li> Profile Informations </li>
+                        <li> Profile Information </li>
                         <li> Inquary Management </li>
 
                         <li style="background-color: rgba(125, 23, 41, 0.81); color:#fff" onclick=" if(window.confirm('Do you want to Delete Your Account?')){document.location = '../Process/signOut-Process.php';}"> Delete Account </li>
@@ -41,6 +41,9 @@
                         <li style="background-color: #f00;color:#fff" onclick=" if(window.confirm('Do you want to Sign Out?')){document.location = '../Process/signOut-Process.php';}"> Sign Out </li>
                     </ul>
                 </div>
+            </div>
+            <div class="content">
+                
             </div>
         </div>
     <?php include "../config/footer.php" ?>
