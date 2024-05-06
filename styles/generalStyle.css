@@ -12,6 +12,16 @@
 body {
     background-color: #ECECF2;
 }
+.err {
+    border: 0.5px solid rgba(83, 83, 172, 0.425);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    max-width: 100%;
+    padding: 30px 20px 30px 20px;
+    background-color: #d8d9d85f;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
 
 h1,h2,h3,h4,h5,h6{
     font-family: "Patua One", serif;

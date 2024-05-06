@@ -37,7 +37,6 @@ BJS PERERA -->
                     <div class="form-elements">
                         <input type="text" name="ArrivalAirport" id="flightNametinationAirport" placeholder="To">
 
-
                         <select name="SeatCount" id="SeatCount">
                             <option disabled selected value> Seat Count </option>
                             <option value="1">1</option>

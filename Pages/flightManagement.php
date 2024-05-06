@@ -1,20 +1,19 @@
 <!--Dilshan Yapa S Y C T it23366572-->
 
-<?php 
-    include "../config/header.php";
-    if(!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !=1)
-    {
-        header('Location: ../Pages/signIn.php');
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
         <link rel="stylesheet" type="text/css" href="../styles/dashboard.css">
-        <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
+        <link rel="icon" type="image/x-icon" href="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/Icons/favicon.png">
         <title>Sky Luxe | Admin Dashboard</title>
+        <?php 
+            include "../config/header.php";
+            if(!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !=1)
+            {
+                header('Location: ../Pages/signIn.php');
+            }
+        ?>
         <style>
             .headding {
                 margin-top: 50px;
@@ -175,7 +174,7 @@
         </style>
     </head>
     <body>
-        
+               
         <div class="body-content">
             <div class="userDashboardMenu">
                 <div class="user">
@@ -189,11 +188,10 @@
                 <div class="navList">
                     <ul class="linkList">
                         <li> Reports</li>
-                        <li> Reservation Management </li>
-                        <li> Flight Management </li>
+                        <li onclick="window.location.href = 'flightManagement.php';"> Flight Management </li>
                         <li> User Management </li>
-                        <li> Profile Informations </li>
-                        <li> Inquary Management </li>
+                        <li onclick="window.location.href = 'adminDashboard.php';"> Profile Informations </li>
+                        <li onclick="window.location.href = 'inquaryManagement.php';"> Inquary Management </li>
 
                         <li style="background-color: rgba(125, 23, 41, 0.81); color:#fff" onclick=" if(window.confirm('Do you want to Delete Your Account?')){document.location = '../Process/signOut-Process.php';}"> Delete Account </li>
 
@@ -202,8 +200,19 @@
                 </div>
             </div>
 
-            <div id="content">
+            <div class="content">
                 <h1 class="headding">Flight Management</h1>
+                
+                <?php
+                    if(isset($_GET['err'])){
+                        echo "
+                        <div class=\"err\">
+                            <span>&#9888; ". $_GET['err'] .".</span>
+                        </div>
+                            ";
+                    }
+                ?>
+
                 <div class="flightDetailsContainer">
                     <h3>Flights</h3>
                     <div class="flightListWrapper">
