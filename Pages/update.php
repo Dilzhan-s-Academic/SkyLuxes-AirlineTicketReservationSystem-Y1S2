@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
+        <link rel="stylesheet" type="text/css" href="../styles/dashboard.css">
+        <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
     <title>User Management</title>
     <link rel="stylesheet" type="text/css" href="../styles/usermanagement.css">
 
@@ -27,6 +29,31 @@
 
         foreach ($result as $userd) {
     ?>
+    <div class="body-content">
+            <div class="userDashboardMenu">
+                <div class="user">
+                    <div class="profilePic">
+                        <img src="../images/userProfilePic.jpeg" alt="user">
+                    </div>
+                    <div class="userName">
+                        <span><?php echo $_SESSION['fname']." ".$_SESSION['lname']; ?></span>
+                    </div>
+                </div>
+                <div class="navList">
+                    <ul class="linkList">
+                        <li onclick="window.location.href = 'adminReport.php';"> Reports</li>
+                        <li onclick="window.location.href = 'flightManagement.php';"> Flight Management </li>
+                        <li onclick="window.location.href = 'usermanagementj.php';"> User Management </li>
+                        <li onclick="window.location.href = 'adminDashboard.php';"> Profile Informations </li>
+                        <li onclick="window.location.href = 'inquaryManagement.php';"> Inquary Management </li>
+
+                        <li style="background-color: rgba(125, 23, 41, 0.81); color:#fff" onclick=" if(window.confirm('Do you want to Delete Your Account?')){document.location = '../Process/delAcc-Process.php';}"> Delete Account </li>
+
+                        <li style="background-color: #f00;color:#fff" onclick=" if(window.confirm('Do you want to Sign Out?')){document.location = '../Process/signOut-Process.php';}"> Sign Out </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
             <div class="form-container" style="display: block;">
                 <h2>Add User</h2>
                 <form action="codej.php" method="POST">
@@ -67,6 +94,8 @@
                     </div>
                 </form>
             </div>
+            </div>
+    </div>
 
     <?php
 
