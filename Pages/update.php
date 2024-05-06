@@ -1,3 +1,5 @@
+<!--IT23365346 BJS PERERA -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,7 +57,7 @@
             </div>
             <div class="content">
             <div class="form-container" style="display: block;">
-                <h2>Add User</h2>
+                <h2>Update User</h2>
                 <form action="codej.php" method="POST">
                     <div class="form-group">
                         <label for="uname">Username</label>
