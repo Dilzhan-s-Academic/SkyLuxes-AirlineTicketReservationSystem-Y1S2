@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 05, 2024 at 06:04 PM
+-- Generation Time: May 06, 2024 at 10:54 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -40,10 +40,11 @@ CREATE TABLE `aircraft` (
 --
 
 INSERT INTO `aircraft` (`AirCraft_ID`, `Type`, `Manufacturer`, `Model`, `Total_of_Seats`) VALUES
-(1, 'Boeing 737', 'Boeing', '737-800', 189),
-(2, 'Airbus A320', 'Airbus', 'A320neo', 180),
-(3, 'Boeing 777', 'Boeing', '777-300ER', 396),
-(4, 'Airbus A350', 'Airbus', 'A350-900', 325);
+(15, 'Airbus A321', 'Airbus', 'A321neo', 200),
+(16, 'Boeing 787', 'Boeing', '787-9 Dreamliner', 290),
+(17, 'Embraer E190', 'Embraer', 'E190-E2', 114),
+(18, 'Bombardier CRJ900', 'Bombardier', 'CRJ900', 76),
+(19, 'Cessna Citation X', 'Cessna', 'Citation X', 8);
 
 -- --------------------------------------------------------
 
@@ -53,7 +54,7 @@ INSERT INTO `aircraft` (`AirCraft_ID`, `Type`, `Manufacturer`, `Model`, `Total_o
 
 CREATE TABLE `airport` (
   `Airport_ID` int(11) NOT NULL,
-  `Name` varchar(50) NOT NULL,
+  `Airport_Name` varchar(50) NOT NULL,
   `Country` varchar(50) NOT NULL,
   `Address` varchar(100) NOT NULL,
   `IATA_Codr` varchar(10) NOT NULL
@@ -63,13 +64,18 @@ CREATE TABLE `airport` (
 -- Dumping data for table `airport`
 --
 
-INSERT INTO `airport` (`Airport_ID`, `Name`, `Country`, `Address`, `IATA_Codr`) VALUES
+INSERT INTO `airport` (`Airport_ID`, `Airport_Name`, `Country`, `Address`, `IATA_Codr`) VALUES
 (12, 'Heathrow Airport', 'United Kingdom', 'Longford, Hounslow,dsfv London', 'LHR'),
 (14, 'Los Angeles International Airport', 'United States', '1 World Way, Los Angeles, California', 'LAX'),
 (15, 'Beijing Capital International Airport', 'China', 'Beijing Capital Airport Road, Chaoyang District, Beijing', 'PEK'),
 (16, 'Dubai International Airport', 'United Arab Emirates', 'Al Twar, Dubai', 'DXB'),
 (17, 'Tokyo Haneda Airport', 'Japan', 'Haneda Airport, Ota City, Tokyo', 'HND'),
-(18, 'Charles de Gaulle Airport', 'France', 'Aéroport Roissy Charles de Gaulle, Roissy-en-France', 'CDG');
+(18, 'Charles de Gaulle Airport', 'France', 'Aéroport Roissy Charles de Gaulle, Roissy-en-France', 'CDG'),
+(19, 'John F. Kennedy International Airport', 'United States', 'JFK Access Rd, Jamaica, New York', 'JFK'),
+(20, 'Sydney Kingsford Smith Airport', 'Australia', 'Sydney NSW 2020, Australia', 'SYD'),
+(21, 'Indira Gandhi International Airport', 'India', 'New Delhi, Delhi', 'DEL'),
+(22, 'Singapore Changi Airport', 'Singapore', 'Airport Blvd, Singapore', 'SIN'),
+(23, 'O. R. Tambo International Airport', 'South Africa', '1 Jones Rd, Kempton Park, Johannesburg', 'JNB');
 
 -- --------------------------------------------------------
 
@@ -84,18 +90,21 @@ CREATE TABLE `flight` (
   `Arrival_DateTime` datetime NOT NULL,
   `Status` varchar(30) NOT NULL,
   `Aircraft_ID` int(11) NOT NULL,
-  `Destination_Airport_ID` int(11) NOT NULL,
-  `Arrival_Airport_ID` int(11) NOT NULL
+  `Departure_Airport_ID` int(11) NOT NULL,
+  `Arrival_Airport_ID` int(11) NOT NULL,
+  `Price` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `flight`
 --
 
-INSERT INTO `flight` (`Flight_ID`, `Name`, `Departure_DateTime`, `Arrival_DateTime`, `Status`, `Aircraft_ID`, `Destination_Airport_ID`, `Arrival_Airport_ID`) VALUES
-(15, 'Pacific Link', '2024-04-05 13:17:00', '2024-05-03 13:17:00', 'Departed', 2, 18, 14),
-(17, 'CHamih', '2024-05-07 22:52:00', '2024-05-09 22:53:00', 'On Time', 1, 15, 18),
-(18, 'adfsdfas', '2024-05-23 03:49:00', '2024-05-18 02:47:00', 'Arriving Soon', 1, 18, 18);
+INSERT INTO `flight` (`Flight_ID`, `Name`, `Departure_DateTime`, `Arrival_DateTime`, `Status`, `Aircraft_ID`, `Departure_Airport_ID`, `Arrival_Airport_ID`, `Price`) VALUES
+(29, 'Tokyo Safari II', '2024-05-01 01:51:00', '2024-05-02 01:51:00', 'Scheduled', 15, 17, 18, NULL),
+(30, 'Dubai to India', '2024-05-09 01:54:00', '2024-05-10 01:54:00', 'Scheduled', 15, 16, 21, NULL),
+(31, 'Sydney Connection', '2024-05-15 04:58:00', '2024-05-15 20:59:00', 'Scheduled', 17, 20, 22, NULL),
+(32, 'Singapore Stopover', '2024-05-23 01:57:00', '2024-05-24 08:57:00', 'Scheduled', 18, 22, 12, NULL),
+(33, 'Johannesburg Jaunt', '2024-05-18 05:59:00', '2024-05-09 04:00:00', 'Scheduled', 17, 12, 19, NULL);
 
 -- --------------------------------------------------------
 
@@ -117,9 +126,34 @@ CREATE TABLE `inquary` (
 --
 
 INSERT INTO `inquary` (`InquaryID`, `Name`, `Email`, `Subject`, `Message`, `Username`) VALUES
-(14, 'Thulya Rodrigo', 'sdadgs@dsg', 'dsgrgreh', ' ehyt ethrtnb tey', 'thulya12'),
-(15, 'dqawre', 'adgfsfe@sfa', 'edtwertf', ' aetgwfcxz', NULL),
-(16, 'Januda Silunika', 'Chamithdilli@gmail.com', 'SDFgh', ' dfghj,', 'thulya12');
+(31, 'Thulya Rodrigo', 'example@mail.com', 'Special Assistance Request', ' I require special assistance due to a medical condition during my flight.', 'thulya12'),
+(32, 'Dilzhan Yapa', 'it323234024@my.sliit.lk', 'Baggage Inquary', ' I lost my baggage on a recent flight. Can you assist me in locating it?', NULL),
+(33, 'John', 'abcde@gmail.com', 'Flight Inquiry', ' I would like to inquire about flights from New York to London.', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `package_sales`
+--
+
+CREATE TABLE `package_sales` (
+  `Eco` int(11) NOT NULL,
+  `PreEco` int(11) NOT NULL,
+  `Bussiness` int(11) NOT NULL,
+  `FirstClass` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `package_sales`
+--
+
+INSERT INTO `package_sales` (`Eco`, `PreEco`, `Bussiness`, `FirstClass`) VALUES
+(75, 40, 50, 4),
+(180, 55, 55, 12),
+(120, 60, 40, 8),
+(50, 45, 30, 5),
+(100, 20, 45, 9),
+(195, 59, 60, 10);
 
 -- --------------------------------------------------------
 
@@ -134,8 +168,18 @@ CREATE TABLE `reservation` (
   `Price` decimal(10,2) NOT NULL,
   `Flight_ID` int(11) NOT NULL,
   `Aircraft_ID` int(11) NOT NULL,
-  `Seat_ID` int(11) NOT NULL
+  `Seat_ID` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `reservation`
+--
+
+INSERT INTO `reservation` (`Reservation_ID`, `Booked_Date`, `Status`, `Price`, `Flight_ID`, `Aircraft_ID`, `Seat_ID`) VALUES
+(5128, '2024-05-06 00:00:00', 'Scheduled', 0.00, 19, 1, 'st200'),
+(11147, '2024-05-06 00:00:00', 'Scheduled', 0.00, 19, 1, 'st75'),
+(64966, '2024-05-06 00:00:00', 'Scheduled', 0.00, 19, 1, 'st126'),
+(70092, '2024-05-06 00:00:00', 'Scheduled', 0.00, 19, 1, 'st104');
 
 -- --------------------------------------------------------
 
@@ -156,11 +200,7 @@ CREATE TABLE `solution` (
 --
 
 INSERT INTO `solution` (`solutionID`, `InquaryID`, `Subject`, `Message`, `AdminID`) VALUES
-(14, 15, 'asada', 'adadsas', 'dilzhan'),
-(15, 15, 'wtwegc', 'vasgstsdvbf', 'dilzhan'),
-(16, 16, 'dsgsdgc', 'agddcxate', 'dilzhan'),
-(17, 14, 'dgdsxcvdtzdscvx', 'afdcaetgc', 'dilzhan'),
-(18, 16, 'dgzvcxdwasv', 'asfsfdvxcdf', 'dilzhan');
+(22, 31, 'Flight Booking Assistance', 'Dear Michael, We are pleased to assist you with your flight booking. Please provide us with your travel dates and destination so that we can proceed with the booking process. Thank you.', 'dilzhan');
 
 -- --------------------------------------------------------
 
@@ -179,7 +219,8 @@ CREATE TABLE `subscription_list` (
 
 INSERT INTO `subscription_list` (`Subscription_ID`, `Email`) VALUES
 (1, 'chamith@email.com'),
-(2, 'chamith@gmail.com');
+(2, 'chamith@gmail.com'),
+(3, 'waegdhj@jfsd');
 
 -- --------------------------------------------------------
 
@@ -204,8 +245,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`Username`, `FirstName`, `LastName`, `Address`, `Mobile`, `Email`, `Password`, `Is_Admin`) VALUES
 ('dhanoshi12', 'Dhanoshi', 'Dilhara', 'Mawanella', '+94712212212', 'example@gmail.com', '22221111', 0),
-('dilzhan', 'Dilzhan', 'Yapa', '24wqr8/9,Kadusfdsgdsgwel ', '+9478534534', 'cafjshet@gmail.com', '11112222', 1),
-('januda', 'Januda', 'Silunika', 'Piliyandala', '+9470121212121', 'sample@mail.com', '11112222', 0),
+('dilzhan', 'Dilzhann', 'Yapa', '24wqr8/9,Kadusfdsgdsgwel ', '+947832864823490', 'cafjshet@gmail.com', '11112222', 1),
+('Januda', 'Januda', 'Silunika', 'Piliyandala', '702324244', 'example@mail.com', '11112222', 1),
 ('mithila12', 'Mithila', 'Dissanayake', 'Horana', '+9472262662', 'email@email.com', '20032003', 0),
 ('thulya12', 'Thulya', 'Rodrigo', 'Panadura', '+94771221221', 'thulya123@email.com', '11112222', 0);
 
@@ -230,7 +271,7 @@ ALTER TABLE `airport`
 --
 ALTER TABLE `flight`
   ADD PRIMARY KEY (`Flight_ID`),
-  ADD KEY `Arrivval_Airport_FK` (`Destination_Airport_ID`),
+  ADD KEY `Arrivval_Airport_FK` (`Departure_Airport_ID`),
   ADD KEY `Destination_Airport_FK` (`Arrival_Airport_ID`),
   ADD KEY `Flight_FK1` (`Aircraft_ID`);
 
@@ -275,43 +316,43 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `aircraft`
 --
 ALTER TABLE `aircraft`
-  MODIFY `AirCraft_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `AirCraft_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `airport`
 --
 ALTER TABLE `airport`
-  MODIFY `Airport_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `Airport_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `flight`
 --
 ALTER TABLE `flight`
-  MODIFY `Flight_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `Flight_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `inquary`
 --
 ALTER TABLE `inquary`
-  MODIFY `InquaryID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `InquaryID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `Reservation_ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Reservation_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70098;
 
 --
 -- AUTO_INCREMENT for table `solution`
 --
 ALTER TABLE `solution`
-  MODIFY `solutionID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `solutionID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `subscription_list`
 --
 ALTER TABLE `subscription_list`
-  MODIFY `Subscription_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Subscription_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
@@ -321,7 +362,7 @@ ALTER TABLE `subscription_list`
 -- Constraints for table `flight`
 --
 ALTER TABLE `flight`
-  ADD CONSTRAINT `Arrivval_Airport_FK` FOREIGN KEY (`Destination_Airport_ID`) REFERENCES `airport` (`Airport_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `Arrivval_Airport_FK` FOREIGN KEY (`Departure_Airport_ID`) REFERENCES `airport` (`Airport_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `Destination_Airport_FK` FOREIGN KEY (`Arrival_Airport_ID`) REFERENCES `airport` (`Airport_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `Flight_FK1` FOREIGN KEY (`Aircraft_ID`) REFERENCES `aircraft` (`AirCraft_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
@@ -329,14 +370,14 @@ ALTER TABLE `flight`
 -- Constraints for table `inquary`
 --
 ALTER TABLE `inquary`
-  ADD CONSTRAINT `Inquary_FK` FOREIGN KEY (`Username`) REFERENCES `user` (`Username`);
+  ADD CONSTRAINT `Inquary_FK` FOREIGN KEY (`Username`) REFERENCES `user` (`Username`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Constraints for table `solution`
 --
 ALTER TABLE `solution`
   ADD CONSTRAINT `Solution_FK` FOREIGN KEY (`AdminID`) REFERENCES `user` (`Username`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `Solution_FK2` FOREIGN KEY (`InquaryID`) REFERENCES `inquary` (`InquaryID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `Solution_FK2` FOREIGN KEY (`InquaryID`) REFERENCES `inquary` (`InquaryID`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
