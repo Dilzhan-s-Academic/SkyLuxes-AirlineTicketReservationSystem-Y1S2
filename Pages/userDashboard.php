@@ -42,59 +42,22 @@
                     </ul>
                 </div>
             </div>
-            <div id="content">
+            
+            <div class="content">
+                <?php
+                    if(isset($_GET['err'])){
+                        echo "
+                        <div class=\"err\">
+                            <span>&#9888; ". $_GET['err'] .".</span>
+                        </div>
+                            ";
+                    }
+                ?>
+                <div id="content"></div>
             </div>
         </div>
         <?php include "../config/footer.php" ?>
-        <script>
-            function loadContent(page) {
-                var path = ""
-                var contentContainer = document.getElementById('content');
-                switch(page){
-                    case 'myinfo':
-                        path = 'Dashboard/userProfileInfo.php';
-                        break;
-                    case 'myresrv':
-                        path = 'Dashboard/userReservationInfo.php';
-                        break;
-                    case 'loyalty':
-                        path = 'Dashboard/loyaltyCust.php';
-                        break;
-                    case 'inquary':
-                        path = 'Dashboard/inquary.php';
-                        break;
-                }
-                fetch(path) //-> stream
-                    .then(response => response.text()) //response as a para
-                    .then(data => {
-                        contentContainer.innerHTML= data; //stream -> text
-                    })
-                    .catch(error => console.error('Error fetching content:', error));
-            }
-
-            function checkPwd(){
-                        var pwd = document.getElementById('newpwd').value;
-                        var cnfmpwd = document.getElementById('cnfmpwd').value;
-                        var msg = document.getElementById('pwdStat');
-                        var submitbtn = document.getElementById('submitBtn');
-                        
-                        if(cnfmpwd == '' ) {
-                            msg.innerHTML = "";
-                            msg.style.color = "";
-                            submitbtn.disabled = true;
-                        }else if(pwd != cnfmpwd){
-                            msg.innerHTML = "Password Doesn't Matched!!";
-                            msg.style.color = "red";
-                            submitbtn.disabled = true;
-                        }else {
-                            msg.innerHTML = "Password Matched!!";
-                            msg.style.color = "green";
-                            submitbtn.disabled = false;
-                        }
-            }
-            loadContent('myresrv');
-
-            
-        </script>
+        <script src="../js/dynamicPageLoader.js"> </script>
+        <script src="../js/checkPwd.js"></script>
     </body>
 </html>

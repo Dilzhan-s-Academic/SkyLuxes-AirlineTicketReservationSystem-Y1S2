@@ -30,6 +30,7 @@
             <img src="../images/others/signIn.png" alt="signUp image">
         </div>
         <div class="form">
+            
             <h2>Sign In</h2>
             <form method="post" action="../Process/signIn-Process.php">
                 <label>Username : </label>

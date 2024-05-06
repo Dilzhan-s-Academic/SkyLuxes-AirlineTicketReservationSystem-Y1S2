@@ -11,6 +11,6 @@
         header('Location: ../Pages/userDashboard.php');
     }
     else{
-        header('Location: ../Pages/userDashboard.php?deleteErr=\"Something went Wrong!! Cannot Delete this Flight.\"');
+        header('Location: ../Pages/userDashboard.php?err=\"Something went Wrong!! Cannot Delete this Flight.\"');
     }
 ?>

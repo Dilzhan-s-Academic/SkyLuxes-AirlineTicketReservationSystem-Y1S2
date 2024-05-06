@@ -59,35 +59,33 @@
         </style>
     </head>
         <body>
-            <?php
-                include("../../config/dbConn.php");
-
-                
-            ?>
+        <?php 
+            include '../../Process/getUserDetails.php';
+        ?>
             <h1 class="headding"> Profile Information</h1>
             <div class="userDetailContainer">
                 <h2>User Details</h2>
                 <div class="udForm">
-                    <form action="#">
+                        <form action="../Process/updateUserInfo.php" method="POST">
                                 <div class="formElement">
                                     <label>First Name : </label>
-                                        <input type="text" id="fname" name="fname" placeholder="First Name" pattern="[A-Z][a-z]+" required>
+                                        <input type="text" id="fname" name="fname" placeholder="First Name" pattern="[A-Z][a-z]+" value="<?php echo $row['FirstName']; ?>" required>
                                 </div>
                                 <div class="formElement">
                                     <label>Last Name :</label>
-                                        <input type="text" id="lname" name="lname" placeholder="Last Name" pattern="[A-Z][a-z]+" required>
+                                        <input type="text" id="lname" name="lname" placeholder="Last Name" pattern="[A-Z][a-z]+" value="<?php echo $row['LastName']; ?>" required>
                                 </div>
                                 <div class="formElement">
                                     <label>Address :</label>
-                                        <input  type="text" id="address" name="address" placeholder="Address" required>
+                                        <input  type="text" id="address" name="address" placeholder="Address" value="<?php echo $row['Address']; ?>" required>
                                 </div>
                                 <div class="formElement">
                                     <label>Mobile No :</label>
-                                        <input type="phone" id="mobile" name="mobile" placeholder="Mobile Number" pattern="[\+][0-9]{10,}" required>
+                                        <input type="phone" id="mobile" name="mobile" placeholder="Mobile Number" value="<?php echo $row['Mobile']; ?>" pattern="[\+][0-9]{10,}" required>
                                 </div>
                                 <div class="formElement">
                                     <label>E-mail :</label>
-                                        <input type="email" id="mail" name="mail" placeholder="E-mail" required>
+                                        <input type="email" id="mail" name="mail" placeholder="E-mail" value="<?php echo $row['Email']; ?>" required>
                                 </div>
                                 
                                 <div class="submitButton">
@@ -99,10 +97,10 @@
             <div class="accDetailContainer">
                 <h2>Account Details</h2>
                 <div class="adForm">
-                    <form action="#">
+                        <form action="../Process/updateAccInfo.php" method="POST">
                                 <div class="formElement">
                                     <label>Username : </label>
-                                        <input type="text" id="username" name="username" placeholder="Username" pattern="[A-Z a-z 0-9]{4,8}" required>
+                                        <input type="text" id="username" value="<?php echo $row['Username']; ?>"  disabled>
                                 </div>
                                 <div class="formElement">
                                     <label>New Password :</label>

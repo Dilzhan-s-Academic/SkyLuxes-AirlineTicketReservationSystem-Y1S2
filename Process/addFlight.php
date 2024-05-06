@@ -12,7 +12,7 @@
         header('Location: ../Pages/flightManagement.php');
     }
     else{
-        header('Location: ../Pages/flightManagement.php?deleteErr=\"Something went Wrong!! Cannot Add the Flight Details.\"');
+        header('Location: ../Pages/flightManagement.php?err=\"Something went Wrong!! Cannot Add the Flight Details.\"');
     }
 
 ?>

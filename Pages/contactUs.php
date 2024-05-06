@@ -5,7 +5,8 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
-        <link rel="stylesheet" type="text/css" href="../styles/generalStatic.css"><link rel="stylesheet" type="text/css" href="../styles/contactUs.css">
+        <link rel="stylesheet" type="text/css" href="../styles/generalStatic.css">
+        <link rel="stylesheet" type="text/css" href="../styles/contactUs.css">
         <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
         <title>Sky Luxe | Contact Us</title>
     </head>
@@ -46,10 +47,22 @@
             </div>
             
             <div class="content-data">
+                
+                <?php
+                    if(isset($_GET['err'])){
+                        echo "
+                        <div class=\"err\">
+                            <span>&#9888; ". $_GET['err'] .".</span>
+                        </div>
+                            ";
+                    }
+                ?>
+
                 <div class="header">
                     <h1>Contact Us</h1>
                     <span>Need assistance or have questions? Feel free to reach out to our dedicated support team via phone or email, we're here to help!</span>
                 </div>
+
                 <div class="contact-otherOptions">
                 <div class="content">
                         <h3>Live Chat</h3>

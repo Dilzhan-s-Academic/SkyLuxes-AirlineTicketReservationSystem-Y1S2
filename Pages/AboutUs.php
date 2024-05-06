@@ -14,7 +14,7 @@
         <?php include "../config/header.php" ?>
 
         <div class="bannerContainer">
-            <img src="..\images\banners\contactUsBanner.png" alt="SkyLuxe Banner">
+            <img src="..\images\banners\aboutUs.jpg" alt="SkyLuxe Banner">
         </div>
         
         <div class="body-content">
