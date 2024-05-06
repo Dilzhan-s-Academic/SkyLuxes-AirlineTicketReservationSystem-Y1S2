@@ -102,8 +102,8 @@
                 <label for="is_admin">Is Admin</label>
                 <input type="number" id="is_admin" name="is_admin" required>
             </div>
-            <div class="form-group">
-                <button type="submit" name="save_btn">Update</button>
+            <div class="form-group" id="blabtn">
+                <button type="submit" name="save_btn" >Add User</button>
             </div>
         </form>
     </div>
