@@ -20,5 +20,6 @@
     else{
         header('Location: ../Pages/inquaryManagement.php?err=\"Something went Wrong!! Cannot Add the Solution Details.\"');
     }
+    $conn->close();
 
 ?>

@@ -21,6 +21,7 @@
     else{
         header('Location: ../Pages/inquaryManagement.php?err=\"Something went Wrong!! Cannot Update the Solution Details.\"');
     }
+    $conn->close();
     
 
 ?>

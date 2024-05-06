@@ -17,4 +17,5 @@
     }else {
         echo "<option value=\"".$row['Type']."\" disabled selected value>".$row['Type']."</option>";
     }
+    $conn->close();
 ?>

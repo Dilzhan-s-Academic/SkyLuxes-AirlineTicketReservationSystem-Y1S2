@@ -31,6 +31,7 @@
             header('Location: ../Pages/adminDashboard.php?err=\"Something went Wrong!! Cannot edit the Flight Details.\"');
         }
     }
+    $conn->close();
     
 
 ?>

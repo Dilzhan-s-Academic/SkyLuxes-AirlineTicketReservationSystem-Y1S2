@@ -35,4 +35,6 @@
             $row_index++;
         }
     }
+    
+    $conn->close();
 ?>

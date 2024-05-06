@@ -17,7 +17,7 @@
             INNER JOIN 
                 aircraft a ON f.Aircraft_ID = a.AirCraft_ID
             INNER JOIN 
-                airport dep ON f.Destination_Airport_ID = dep.Airport_ID
+                airport dep ON f.Departure_Airport_ID = dep.Airport_ID
             INNER JOIN 
                 airport arr ON f.Arrival_Airport_ID = arr.Airport_ID
             ORDER BY f.Departure_DateTime;";
@@ -50,4 +50,5 @@
             }
         }
         echo "<script> var FlightData = " . json_encode($data) . "</script>";
+        $conn->close();
 ?>

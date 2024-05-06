@@ -41,9 +41,9 @@
         <div class= "SearchFlightsForm">
             <span>Reserve Your Seat</span>
             <div class="form-div">
-                <form> 
+                <form method="POST" action="Pages/plan.php"> 
                     <div class="form-elements">
-                        <select name="DepartureAirport" id="DepartureAirport">
+                        <select name="DepartureAirport" id="DepartureAirport" required>
                             <option disabled selected value> From </option>
                             <?php
                                 include("config/dbConn.php");
@@ -52,18 +52,19 @@
                                 
                                 if ($result->num_rows > 0) {
                                     while ($row = $result->fetch_assoc()) {
-                                        echo "<option value=\"".$row['Airport_ID']."\">".$row['Airport_Name']."</option>";
+                                        echo "<option value=\"".$row['Airport_Name']."\">".$row['Airport_Name']."</option>";
                                     }
                                 }else {
                                     echo "<option value=\"".$row['Airport_Name']."\" disabled selected value>".$row['Airport_Name']."</option>";
                                 }
+                                $conn->close();
                             ?>
                         </select>
-                        <input type="date" id="departureDate" data-placeholder="Departure Date">
-                        <input type="date" id="returnDate" data-placeholder="Return date">
+                        <input type="date" name="DayToGo" id="DayToGo" data-placeholder="Departure Date" required>
+                        <input type="date" id="DayToCome" name="DayToCome" data-placeholder="Return date" required>
                     </div>
                     <div class="form-elements">
-                        <select name="DestinationAirport" id="DestinationAirport">
+                        <select name="ArrivalAirport" id="ArrivalAirport" required>
                             <option disabled selected value> To </option>
                             <?php
                                 include("config/dbConn.php");
@@ -72,14 +73,15 @@
                                 
                                 if ($result->num_rows > 0) {
                                     while ($row = $result->fetch_assoc()) {
-                                        echo "<option value=\"".$row['Airport_ID']."\">".$row['Airport_Name']."</option>";
+                                        echo "<option value=\"".$row['Airport_Name']."\">".$row['Airport_Name']."</option>";
                                     }
                                 }else {
                                     echo "<option value=\"".$row['Airport_Name']."\" disabled selected value>".$row['Airport_Name']."</option>";
                                 }
+                                $conn->close();
                             ?>
                         </select>
-                        <select name="SheetCount" id="SheetCount">
+                        <select name="SeatCount" id="SeatCount" required>
                             <option disabled selected value> Seat Count </option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -92,10 +94,12 @@
                             <option value="9">9</option>
                             <option value="10">10</option>
                         </select>
-                        <select name="SheetClass" id="SheetClass">
+                        <select name="SeatClass" id="SeatClass" required>
                             <option disabled selected value> Class </option>
-                            <option value="abc">Economy</option>
-                            <option value="ddd">Business</option>
+                            <option value="economy">Economy</option>
+                            <option value="pre-economy">Premium-Economy</option>
+                            <option value="bussiness">Bussiness</option>
+                            <option value="first">First</option>
                         </select>
                     </div>
                     <div class="form-submittion">

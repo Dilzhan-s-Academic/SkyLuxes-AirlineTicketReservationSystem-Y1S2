@@ -27,4 +27,5 @@
     }else {
         header('Location: ../Pages/SignIn.php');
     }
+    $conn->close();
 ?>
