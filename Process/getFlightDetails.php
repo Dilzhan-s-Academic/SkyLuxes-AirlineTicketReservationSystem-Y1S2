@@ -9,8 +9,8 @@
                 a.Type AS 'Aircraft Name',
                 f.Departure_DateTime AS 'Departure Date and Time',
                 f.Arrival_DateTime AS 'Arrival Date and Time',
-                dep.Name AS 'Departure Airport',
-                arr.Name AS 'Arrival Airport',
+                dep.Airport_Name AS 'Departure Airport',
+                arr.Airport_Name AS 'Arrival Airport',
                 f.Status AS 'Status'
             FROM 
                 flight f
