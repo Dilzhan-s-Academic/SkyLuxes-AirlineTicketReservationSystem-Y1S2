@@ -3,7 +3,17 @@
 .content-data {
     max-width: calc(100% - 320px);
 }
-
+.increase, .decrease{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 7px auto 7px 30px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    color: black;
+    box-shadow: 0 5px 10px rgba(30, 113, 54, 0.2);
+}
 .content {
     margin-top: 30px;
     max-width: 100%;

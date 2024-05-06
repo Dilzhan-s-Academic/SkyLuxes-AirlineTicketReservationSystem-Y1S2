@@ -23,7 +23,11 @@ BJS PERERA -->
 
 
     <div class="container">
-        <div class="SearchFlightsForm">
+    
+        
+        <div class="bannerJ">
+        <section id="hbanner1">
+        <div class="SearchFlightsForm" style="background-color:rgba(255,255,255,0.8);">
             <span>Reserve Your Seat</span>
             <div class="form-div">
                 <form method="POST">
@@ -175,6 +179,8 @@ BJS PERERA -->
                 </table>
             </div>
         </div>
+        </section>
+    </div>
     </div>
 
 

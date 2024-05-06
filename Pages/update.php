@@ -91,7 +91,7 @@
                         <label for="is_admin">Is Admin</label>
                         <input type="number" id="is_admin" name="is_admin" value="<?php echo $userd['is_admin']; ?>">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="blabtn">
                         <button type="submit" name="updateBtn">Update</button>
                     </div>
                 </form>

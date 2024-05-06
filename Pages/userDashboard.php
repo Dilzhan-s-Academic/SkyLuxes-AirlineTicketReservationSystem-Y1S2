@@ -33,7 +33,6 @@
                 </div>
                 <div class="navList">
                     <ul class="linkList">
-                        <li onclick="loadContent('myresrv');"> My Reservations </li>
                         <li onclick="loadContent('myinfo');"> Profile Information </li>
                         <li onclick="loadContent('loyalty');"> Loyalty Customer </li>
                         <li onclick="loadContent('inquary');"> My Inquaries </li>

@@ -26,9 +26,9 @@ if (isset($_POST['save_btn'])){
 
    
 
-    if ($reserve_result) {
+    if ($result) {
         $_SESSION['status'] = "User added.";
-        echo "<script> if(window.confirm('Reservation Added.')){document.location = 'usermanagementj.php';}</script>";
+        echo "<script> if(window.confirm('User Added.')){document.location = 'usermanagementj.php';}</script>";
     } else {
         $_SESSION['status'] = "Error Occured Try Again!.";
         echo "<script>alert('Error Occurred. Please try again.');</script>";
@@ -53,7 +53,7 @@ if (isset($_POST['updateBtn'])){
 
     if ($update_result) {
         $_SESSION['status'] = "User details Updated.";
-        echo "<script> if(window.confirm('Reservation Added.')){document.location = 'usermanagementj.php';}</script>";
+        echo "<script> if(window.confirm('User Updated.')){document.location = 'usermanagementj.php';}</script>";
     } else {
         $_SESSION['status'] = "Error Occured Try Again!.";
         echo "<script>alert('Error Occurred. Please try again.');</script>";

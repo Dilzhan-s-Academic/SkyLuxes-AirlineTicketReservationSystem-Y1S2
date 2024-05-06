@@ -5,12 +5,14 @@
 
     <head>
         <link rel="stylesheet" type="text/css" href="../styles/generalStyle.css">
-        <link rel="stylesheet" type="text/css" href="../styles/generalStatic.css"><link rel="stylesheet" type="text/css" href="../styles/services.css">
+        <link rel="stylesheet" type="text/css" href="../styles/generalStatic.css">
+        <link rel="stylesheet" type="text/css" href="../styles/services.css">
         <link rel="icon" type="image/x-icon" href="../images/Icons/favicon.png">
         <title>Sky Luxe | Services</title>
     </head>
     <body>
         <?php include "../config/header.php" ?>
+
 
         <div class="bannerContainer">
             <img src="../images/services/servicesBanner.jpg" alt="SkyLuxe Banner">
@@ -33,6 +35,9 @@
                         <li>Contact Us</li>
                     </a>
                 </ul>
+                
+                <button class="increase">A+</button>
+                <button class="decrease">A-</button>
             </div>
             
             <div class="content-data">
@@ -40,7 +45,7 @@
                     <h1>SkyLuxes Airline Services</h1>
                     <span>SkyLuxes Airlines provide you with the best value-added services to make your journey more comfortable</span>
                 </div>
-                <div class="content">
+                <div class="content" id="conPara">
                     <p class = "para">Experience hassle-free air travel with our airline services. From booking your ticket to reaching your destination, 
                     we're here to make your journey smooth and comfatable. Enjoy easy reservation through our user-friendly platform and 
                     relax onboard with top-notch amenities and attentive service. Whether you're flying for business or leisure, count on 
@@ -139,7 +144,7 @@
                     
             </div>
         </div>
-
+        <script src="../js/fontSize.js"></script>
         <?php include "../config/footer.php" ?>
     </body>
 </html>

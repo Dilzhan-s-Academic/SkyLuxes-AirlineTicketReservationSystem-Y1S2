@@ -7,9 +7,6 @@ function loadContent(page) {
         case 'myinfo':
             path = 'Dashboard/userProfileInfo.php';
             break;
-        case 'myresrv':
-            path = 'Dashboard/userReservationInfo.php';
-            break;
         case 'loyalty':
             path = 'Dashboard/loyaltyCust.php';
             break;
@@ -24,4 +21,4 @@ function loadContent(page) {
         })
         .catch(error => console.error('Error fetching content:', error));
 }
-loadContent('myresrv');
+loadContent('myinfo');
