@@ -105,11 +105,12 @@
                             <input type="radio" id="TripType2" value="Returm" name="TripType" checked="checked">
                             <lable id="TripType2">Return</lable>
                         </div>
-                        <input type="Submit" id="Search" value="Search">
+                        <input type="submit" id="Search" value="Search" name="submit">
                     </div>
                 </form>
             </div>
         </div>
+
         <div class="body-content">
             <div class="contactus">
                 <div class="support" onclick="">
