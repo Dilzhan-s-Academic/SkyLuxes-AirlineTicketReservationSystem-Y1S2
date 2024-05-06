@@ -23,5 +23,6 @@
     else{
         header('Location: ../Pages/contactUs.php?err=\"Something went Wrong!! Cannot edit the Flight Details.\"');
     }
+    $conn->close();
 
 ?>

@@ -187,9 +187,9 @@
                 </div>
                 <div class="navList">
                     <ul class="linkList">
-                        <li> Reports</li>
+                        <li onclick="window.location.href = 'adminReport.php';"> Reports</li>
                         <li onclick="window.location.href = 'flightManagement.php';"> Flight Management </li>
-                        <li> User Management </li>
+                        <li onclick="window.location.href = 'usermanagementj.php';"> User Management </li>
                         <li onclick="window.location.href = 'adminDashboard.php';"> Profile Informations </li>
                         <li onclick="window.location.href = 'inquaryManagement.php';"> Inquary Management </li>
 

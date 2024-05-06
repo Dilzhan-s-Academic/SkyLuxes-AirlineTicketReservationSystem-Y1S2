@@ -35,12 +35,11 @@
                 </div>
                 <div class="navList">
                     <ul class="linkList">
-                        <li> Reports</li>
-                        <li> Reservation Management </li>
+                        <li onclick="window.location.href = 'adminReport.php';"> Reports</li>
                         <li onclick="window.location.href = 'flightManagement.php';"> Flight Management </li>
-                        <li> User Management </li>
-                        <li> Profile Information </li>
-                        <li> Inquary Management </li>
+                        <li onclick="window.location.href = 'usermanagementj.php';"> User Management </li>
+                        <li onclick="window.location.href = 'adminDashboard.php';"> Profile Informations </li>
+                        <li onclick="window.location.href = 'inquaryManagement.php';"> Inquary Management </li>
 
                         <li style="background-color: rgba(125, 23, 41, 0.81); color:#fff" onclick=" if(window.confirm('Do you want to Delete Your Account?')){document.location = '../Process/signOut-Process.php';}"> Delete Account </li>
 

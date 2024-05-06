@@ -22,4 +22,5 @@
         header('Location: ../Pages/contactUs.php?err=\"Something went Wrong!! Cannot Add the Inquary Details.\"');
     }
 
+    $conn->close();
 ?>

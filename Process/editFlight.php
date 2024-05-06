@@ -9,7 +9,7 @@
             Arrival_DateTime = '" . $_POST['arrivalDateTime'] . "',
             Status = '" . $_POST['Status'] . "',
             Aircraft_ID = " . $_POST['aircraft'] . ",
-            Destination_Airport_ID = " . $_POST['departureAirport'] . ",
+            Departure_Airport_ID = " . $_POST['departureAirport'] . ",
             Arrival_Airport_ID = " . $_POST['arrivalAirport'] . "
             WHERE Flight_ID = " . $_POST['flightID'] . ";";
 
@@ -23,5 +23,6 @@
     else{
         header('Location: ../Pages/flightManagement.php?err=\"Something went Wrong!! Cannot edit the Flight Details.\"');
     }
+    $conn->close();
 
 ?>

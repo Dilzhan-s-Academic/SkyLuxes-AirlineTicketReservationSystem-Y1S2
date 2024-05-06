@@ -14,5 +14,6 @@
     else{
         header('Location: ../index.php?err=\"Something went Wrong!! Cannot Add the Flight Details.\"');
     }
+    $conn->close();
 
 ?>

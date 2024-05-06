@@ -11,4 +11,5 @@
     if (mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_array($result);
     }
+    $conn->close();
 ?>

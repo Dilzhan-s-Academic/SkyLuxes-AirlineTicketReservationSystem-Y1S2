@@ -34,4 +34,5 @@
     } else {
         header('Location: ../Pages/signUp.php');
     }
+    $conn->close();
 ?>

@@ -13,4 +13,5 @@
     else{
         header('Location: ../Pages/inquaryManagement.php?err=\"Something went Wrong!! Cannot Delete this Flight.\"');
     }
+    $conn->close();
 ?>
