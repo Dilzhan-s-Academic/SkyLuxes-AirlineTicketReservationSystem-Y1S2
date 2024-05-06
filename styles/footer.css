@@ -6,14 +6,16 @@ footer{
     background-color: rgb(0, 0, 0);
     color: white;
     margin-top: auto;
-    justify-content: center;
+    
+    
 }
 
-footer .footerT{
+footer .col{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
+    
 }
 
 footer .logo{

@@ -1,5 +1,3 @@
-
-<!--G.M.M.Dissanayake It23360846-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +9,7 @@
 </head>
 <body>
 <footer class="section-p1">
-        <div class="footerT">
+        <div class="col">
             <img src='http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/logo.png' alt="logo" id="logo">
             <p id="footerTopics">Contact</p>
             <p><strong>Contact: </strong>07712234432 / 076544321</p>
@@ -31,7 +29,7 @@
             </div>
         </div>
 
-        <div class="footerT">
+        <div class="col">
 
             <p id="footerTopics">About</p>
             <a href="#">About us</a>
@@ -41,7 +39,7 @@
 
         </div>
 
-        <div class="footerT">
+        <div class="col">
 
             <p id="footerTopics">My Account</p>
             <a href="#">My Account</a>
@@ -50,18 +48,18 @@
 
         </div>
 
-        <div class="footerT install">
+        <div class="col install">
 
             <p id="footerTopics">Install App</p>
             <p>From App Store or Google play</p>
             <div class="row">
 
-                <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/app.jpg" alt="">
-                <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/play.jpg" alt="">
+                <img src="../images/app.jpg" alt="">
+                <img src="../images/play.jpg" alt="">
 
             </div>
             <p id="footerTopics">Secured Payment Gateways </p>
-            <img src="http://localhost/SkyLuxes-AirlineTicketReservationSystem/images/pay.png" alt="">
+            <img src="../images/pay.png" alt="">
 
             <div class="subscribeMail">
                             <form method="post" action="">
