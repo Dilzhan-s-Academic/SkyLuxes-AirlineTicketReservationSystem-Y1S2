@@ -15,7 +15,7 @@
     <body>
         <?php include "./config/header.php" ?>
 
-        
+        <!-- W3School Slideshow Content Start - https://www.w3schools.com/howto/howto_js_slideshow.asp  -->
         <div class="slideshow-container">
 
         <div class="mySlides fade">
@@ -37,7 +37,9 @@
             <span class="dot"></span> 
             <span class="dot"></span> 
         </div>
+        <!-- W3School Slideshow Content End  -->
 
+        
         <div class= "SearchFlightsForm">
             <span>Reserve Your Seat</span>
             <div class="form-div">
