@@ -1,4 +1,4 @@
-// Dilshan Yapa S Y C T it23366572
+// Dilshan Yapa S Y C T 
 
 function loadContent(page) {
     var path = ""
