@@ -44,6 +44,29 @@ I'm considering leveraging Docker containers to optimize deployment and scalabil
 <hr>
 Keep an eye out for these enhancements as we strive to make our system even more efficient and user-friendly!
 
+## Home
+
+### Home Page
+
+   <img src="https://github.com/Dilzhan-s-Academic/SkyLuxes-AirlineTicketReservationSystem-Y1S2/blob/main/ScreenShots/Screenshot%202024-07-20%20121958.png">
+
+### Plan Page
+
+   <img src="https://github.com/Dilzhan-s-Academic/SkyLuxes-AirlineTicketReservationSystem-Y1S2/blob/main/ScreenShots/Screenshot%202024-07-20%20122044.png">
+
+### Flight Management Page
+
+   <img src="https://github.com/Dilzhan-s-Academic/SkyLuxes-AirlineTicketReservationSystem-Y1S2/blob/main/ScreenShots/Screenshot%202024-07-20%20122751.png">
+
+
+### Report Page
+
+   <img src="https://github.com/Dilzhan-s-Academic/SkyLuxes-AirlineTicketReservationSystem-Y1S2/blob/main/ScreenShots/Screenshot%202024-07-20%20122732.png">
+
+   
+### Other Screenshots are in ScreenShots Folder
+   
+
 ## Individual Contribution
 
 ### DilZhan
