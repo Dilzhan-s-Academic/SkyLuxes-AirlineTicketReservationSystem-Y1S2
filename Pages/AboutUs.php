@@ -1,4 +1,4 @@
-<!-- Thulya Rodrigo IT23376922 -->
+<!-- Thulya Rodrigo -->
 
 <!DOCTYPE html>
 <html lang="en">
