@@ -1,4 +1,4 @@
-<!-- Thulya Rodrigo IT23376922 -->
+<!-- Thulya Rodrigo  -->
 <?php
     include("../config/dbConn.php");
     session_start();
