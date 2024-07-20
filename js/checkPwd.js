@@ -1,4 +1,4 @@
-// G.M.M.Dissanayake It23360846
+// G.M.M.Dissanayake 
 
 function checkPwd(){
     var pwd = document.getElementById('newpwd').value;
