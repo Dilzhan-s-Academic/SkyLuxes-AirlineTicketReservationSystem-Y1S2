@@ -1,4 +1,4 @@
-<!--G.M.M.Dissanayake It23360846-->
+<!--G.M.M.Dissanayake -->
 
 <?php
     require_once "../../config/dbConn.php";
